@@ -1,0 +1,2468 @@
+{
+  "meta": {
+    "version": "2.0",
+    "generated_at": "2025-12-13T18:45:10.502022",
+    "total_variants": 34,
+    "title": "Сборник вариантов ЕГЭ (Информатика)"
+  },
+  "intro": {
+    "title": "Введение",
+    "materials": [
+      {
+        "title": "Инструкция",
+        "type": "text",
+        "content": "Даты выхода вариантов:\n1) Варианты 1-10 (Сентябрь 2025)\n2) Варианты 11-15 (Октябрь 2025)\n3) Варианты 16-30 (Ноябрь 2025)\n3) Варианты 31-40 (Декабрь 2025)\n4) Варианты 41-50 (Январь 2026)\n\nПо любым вопросам: Если Вы нашли опечатки в условиях или неправильные ответы, пишите в Telegram @kegeDV"
+      },
+      {
+        "title": "История изменений (условий, файлов, ответов)",
+        "type": "text",
+        "content": "24.09.2025: Добавлены варианты 1-3, ответы к 1-6.\n29.09.2025: Добавлены варианты 4-8.\n14.10.2025: Изменён ответ в задании 12 варианта №2, добавлен вариант 9.\n22.10.2025: Добавлены ответы на варианты 7-15, варианты 10-11, исправлена опечатка в вар.4.\n23.10.2025: Добавлен вариант 12, решения к вариантам 1-9.\n27.10.2025: Добавлен вариант 13, решения к вариантам 10-34.\n01.11.2025: Исправления в вариантах 5 и 8.\n02.11.2025: Добавлены варианты 14-19.\n14.11.2025: Исправлен ответ в вар.10, добавлены ответы на 16-25.\n15.11.2025: Добавлены варианты 20-25."
+      }
+    ]
+  },
+  "global_resources": [
+    {
+      "id": "module-answers-1-25",
+      "title": "Ответы на варианты 1-25",
+      "type": "pdf",
+      "filename": "answers_vars_1_25.pdf",
+      "url": "/api/storage/pdf/efc6dd51-8992-42db-94e2-b2e83c4cb174-answers_vars_1_25.pdf"
+    },
+    {
+      "id": "module-answers-26-40",
+      "title": "Ответы на варианты 26-40",
+      "type": "placeholder",
+      "description": "Файл еще не загружен автором."
+    },
+    {
+      "id": "module-answers-41-50",
+      "title": "Ответы на варианты 41-50",
+      "type": "placeholder",
+      "description": "Файл еще не загружен автором."
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-01",
+      "number": 1,
+      "title": "Вариант 1",
+      "slug": "variant-1",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Вариант 1.pdf",
+          "url": "/api/storage/pdf/1cf7ae7f-8656-4a79-8cc3-14979c26a465-________1.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var1.zip",
+            "url": "/assets/b10e8cb6-c3fa-4c57-a705-fed4cf163afe-var1.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/21153b07bac8beb8ce31e955f5e74673/?p=b6mnL7ysNhSSwzCfQGUDrA",
+            "title": "Видеоразбор задания №24"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/2360c1287ddb6cdb3a6c76c13b506d94/?p=N2yAQkJ71jtUzgu_ObLg_g",
+            "title": "Видеоразбор задания №26"
+          }
+        }
+      ],
+      "answers": [
+        {
+          "task": 1,
+          "value": "42",
+          "is_multiline": false
+        },
+        {
+          "task": 2,
+          "value": "wyxz",
+          "is_multiline": false
+        },
+        {
+          "task": 3,
+          "value": "55050",
+          "is_multiline": false
+        },
+        {
+          "task": 4,
+          "value": "1110",
+          "is_multiline": false
+        },
+        {
+          "task": 5,
+          "value": "18",
+          "is_multiline": false
+        },
+        {
+          "task": 6,
+          "value": "88",
+          "is_multiline": false
+        },
+        {
+          "task": 7,
+          "value": "74656",
+          "is_multiline": false
+        },
+        {
+          "task": 8,
+          "value": "939",
+          "is_multiline": false
+        },
+        {
+          "task": 9,
+          "value": "7387",
+          "is_multiline": false
+        },
+        {
+          "task": 10,
+          "value": "12",
+          "is_multiline": false
+        },
+        {
+          "task": 11,
+          "value": "32",
+          "is_multiline": false
+        },
+        {
+          "task": 12,
+          "value": "999",
+          "is_multiline": false
+        },
+        {
+          "task": 13,
+          "value": "2048",
+          "is_multiline": false
+        },
+        {
+          "task": 14,
+          "value": "64",
+          "is_multiline": false
+        },
+        {
+          "task": 15,
+          "value": "60",
+          "is_multiline": false
+        },
+        {
+          "task": 16,
+          "value": "3353073668826",
+          "is_multiline": false
+        },
+        {
+          "task": 17,
+          "value": "1, 10620",
+          "is_multiline": false
+        },
+        {
+          "task": 18,
+          "value": "1476, 2466",
+          "is_multiline": false
+        },
+        {
+          "task": 19,
+          "value": "50",
+          "is_multiline": false
+        },
+        {
+          "task": 20,
+          "value": "52, 53",
+          "is_multiline": false
+        },
+        {
+          "task": 21,
+          "value": "54",
+          "is_multiline": false
+        },
+        {
+          "task": 22,
+          "value": "3032",
+          "is_multiline": false
+        },
+        {
+          "task": 23,
+          "value": "1926",
+          "is_multiline": false
+        },
+        {
+          "task": 24,
+          "value": "15",
+          "is_multiline": false
+        },
+        {
+          "task": 25,
+          "value": "320001, 145503\n320002, 160004\n320003, 3397\n320004, 509916\n320005, 131579\n320006, 179350",
+          "is_multiline": true
+        },
+        {
+          "task": 26,
+          "value": "303, 88455771",
+          "is_multiline": false
+        },
+        {
+          "task": 27,
+          "value": "6494, 22451\n25557, 5810",
+          "is_multiline": true
+        }
+      ]
+    },
+    {
+      "id": "var-02",
+      "number": 2,
+      "title": "Вариант 2",
+      "slug": "variant-2",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "var2.pdf",
+          "url": "/api/storage/pdf/0885412f-fd9f-4e37-9110-d3f93ec03555-var2.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var2.zip",
+            "url": "/assets/5395b9cc-bcca-4dda-8883-0c07e2375628-var2.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/1f32ad643d1c3a7c8eff97dc7c64db5e/?p=pk5BYwL3yYNUoTN2j18p7g",
+            "title": "Видеоразбор задания №24"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/86011dc46fd657b4e5e830a1b674e9e4/?p=5G3To_1arFUu_EMWFNPzuA",
+            "title": "Видеоразбор задания №26"
+          }
+        }
+      ],
+      "answers": [
+        {
+          "task": 1,
+          "value": "45",
+          "is_multiline": false
+        },
+        {
+          "task": 2,
+          "value": "xzyw",
+          "is_multiline": false
+        },
+        {
+          "task": 3,
+          "value": "90",
+          "is_multiline": false
+        },
+        {
+          "task": 4,
+          "value": "111",
+          "is_multiline": false
+        },
+        {
+          "task": 5,
+          "value": "179",
+          "is_multiline": false
+        },
+        {
+          "task": 6,
+          "value": "78",
+          "is_multiline": false
+        },
+        {
+          "task": 7,
+          "value": "16",
+          "is_multiline": false
+        },
+        {
+          "task": 8,
+          "value": "15624",
+          "is_multiline": false
+        },
+        {
+          "task": 9,
+          "value": "50",
+          "is_multiline": false
+        },
+        {
+          "task": 10,
+          "value": "8",
+          "is_multiline": false
+        },
+        {
+          "task": 11,
+          "value": "466",
+          "is_multiline": false
+        },
+        {
+          "task": 12,
+          "value": "258",
+          "is_multiline": false
+        },
+        {
+          "task": 13,
+          "value": "252",
+          "is_multiline": false
+        },
+        {
+          "task": 14,
+          "value": "3579758888",
+          "is_multiline": false
+        },
+        {
+          "task": 15,
+          "value": "41",
+          "is_multiline": false
+        },
+        {
+          "task": 16,
+          "value": "490",
+          "is_multiline": false
+        },
+        {
+          "task": 17,
+          "value": "581, 78246",
+          "is_multiline": false
+        },
+        {
+          "task": 18,
+          "value": "1144, 2352",
+          "is_multiline": false
+        },
+        {
+          "task": 19,
+          "value": "29",
+          "is_multiline": false
+        },
+        {
+          "task": 20,
+          "value": "27, 28",
+          "is_multiline": false
+        },
+        {
+          "task": 21,
+          "value": "25",
+          "is_multiline": false
+        },
+        {
+          "task": 22,
+          "value": "16",
+          "is_multiline": false
+        },
+        {
+          "task": 23,
+          "value": "167",
+          "is_multiline": false
+        },
+        {
+          "task": 24,
+          "value": "47",
+          "is_multiline": false
+        },
+        {
+          "task": 25,
+          "value": "5214337740, 152199\n5214543300, 152205\n5218243380, 152313",
+          "is_multiline": true
+        },
+        {
+          "task": 26,
+          "value": "782, 165",
+          "is_multiline": false
+        },
+        {
+          "task": 27,
+          "value": "53740, 767603\n47195, 149982",
+          "is_multiline": true
+        }
+      ]
+    },
+    {
+      "id": "var-03",
+      "number": 3,
+      "title": "Вариант 3",
+      "slug": "variant-3",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Вариант 3.pdf",
+          "url": "/api/storage/pdf/f442dc8b-f819-43d5-b9d5-b742f31de086-123.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var3.zip",
+            "url": "/assets/a7d8ca11-dcaa-4625-a230-34193639b3ea-var3.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/016f1f78b06951f36cc6f4afc79e29d5/?p=B_cuPkk1Ln4z_Vj80unY4Q",
+            "title": "Видеоразбор задания №24"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/5bae93bc484c3bca75ac442f8bd75aa3/?p=Fxg3V4ULA3VRCC_OKqoRRg",
+            "title": "Видеоразбор задания №26"
+          }
+        }
+      ],
+      "answers": [
+        {
+          "task": 1,
+          "value": "37",
+          "is_multiline": false
+        },
+        {
+          "task": 2,
+          "value": "yzxw",
+          "is_multiline": false
+        },
+        {
+          "task": 3,
+          "value": "540",
+          "is_multiline": false
+        },
+        {
+          "task": 4,
+          "value": "18",
+          "is_multiline": false
+        },
+        {
+          "task": 5,
+          "value": "17",
+          "is_multiline": false
+        },
+        {
+          "task": 6,
+          "value": "60",
+          "is_multiline": false
+        },
+        {
+          "task": 7,
+          "value": "86",
+          "is_multiline": false
+        },
+        {
+          "task": 8,
+          "value": "66393",
+          "is_multiline": false
+        },
+        {
+          "task": 9,
+          "value": "8751",
+          "is_multiline": false
+        },
+        {
+          "task": 10,
+          "value": "11",
+          "is_multiline": false
+        },
+        {
+          "task": 11,
+          "value": "110",
+          "is_multiline": false
+        },
+        {
+          "task": 12,
+          "value": "250",
+          "is_multiline": false
+        },
+        {
+          "task": 13,
+          "value": "21",
+          "is_multiline": false
+        },
+        {
+          "task": 14,
+          "value": "147",
+          "is_multiline": false
+        },
+        {
+          "task": 15,
+          "value": "22",
+          "is_multiline": false
+        },
+        {
+          "task": 16,
+          "value": "8197200",
+          "is_multiline": false
+        },
+        {
+          "task": 17,
+          "value": "37896, 193425",
+          "is_multiline": false
+        },
+        {
+          "task": 18,
+          "value": "2420, 486",
+          "is_multiline": false
+        },
+        {
+          "task": 19,
+          "value": "106",
+          "is_multiline": false
+        },
+        {
+          "task": 20,
+          "value": "105, 206",
+          "is_multiline": false
+        },
+        {
+          "task": 21,
+          "value": "204",
+          "is_multiline": false
+        },
+        {
+          "task": 22,
+          "value": "9",
+          "is_multiline": false
+        },
+        {
+          "task": 23,
+          "value": "16245",
+          "is_multiline": false
+        },
+        {
+          "task": 24,
+          "value": "21",
+          "is_multiline": false
+        },
+        {
+          "task": 25,
+          "value": "10793640, 663\n12326160, 693\n13997280, 723\n15813000, 753\n17779320, 783",
+          "is_multiline": true
+        },
+        {
+          "task": 26,
+          "value": "34075, 33415",
+          "is_multiline": false
+        },
+        {
+          "task": 27,
+          "value": "89827, 123718\n141768, 193596",
+          "is_multiline": true
+        }
+      ]
+    },
+    {
+      "id": "var-04",
+      "number": 4,
+      "title": "Вариант 4",
+      "slug": "variant-4",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "variant_4.pdf",
+          "url": "/api/storage/pdf/057a870d-4770-495e-9603-f59bf666f9b0-var4.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var4.zip",
+            "url": "/assets/060fe182-a2cb-4652-97bb-606d735b812d-var4.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/54c9fad2d5e67e2986983a5529194493/?p=9Yz1YRwn6ExTKLbS2usBmA",
+            "title": "Видеоразбор задания №24"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/a74bbda5c8ace69e7463ad6a920c4542/?p=3r9PnV8vE25yNB39vVKBdQ",
+            "title": "Видеоразбор задания №26"
+          }
+        }
+      ],
+      "answers": [
+        {
+          "task": 1,
+          "value": "45",
+          "is_multiline": false
+        },
+        {
+          "task": 2,
+          "value": "xwyz",
+          "is_multiline": false
+        },
+        {
+          "task": 3,
+          "value": "14700",
+          "is_multiline": false
+        },
+        {
+          "task": 4,
+          "value": "20",
+          "is_multiline": false
+        },
+        {
+          "task": 5,
+          "value": "229",
+          "is_multiline": false
+        },
+        {
+          "task": 6,
+          "value": "56",
+          "is_multiline": false
+        },
+        {
+          "task": 7,
+          "value": "6",
+          "is_multiline": false
+        },
+        {
+          "task": 8,
+          "value": "88003254",
+          "is_multiline": false
+        },
+        {
+          "task": 9,
+          "value": "133",
+          "is_multiline": false
+        },
+        {
+          "task": 10,
+          "value": "33",
+          "is_multiline": false
+        },
+        {
+          "task": 11,
+          "value": "14190",
+          "is_multiline": false
+        },
+        {
+          "task": 12,
+          "value": "881",
+          "is_multiline": false
+        },
+        {
+          "task": 13,
+          "value": "224",
+          "is_multiline": false
+        },
+        {
+          "task": 14,
+          "value": "2203880387",
+          "is_multiline": false
+        },
+        {
+          "task": 15,
+          "value": "31",
+          "is_multiline": false
+        },
+        {
+          "task": 16,
+          "value": "63",
+          "is_multiline": false
+        },
+        {
+          "task": 17,
+          "value": "6786, 10253",
+          "is_multiline": false
+        },
+        {
+          "task": 18,
+          "value": "440, 2425",
+          "is_multiline": false
+        },
+        {
+          "task": 19,
+          "value": "11",
+          "is_multiline": false
+        },
+        {
+          "task": 20,
+          "value": "15, 16",
+          "is_multiline": false
+        },
+        {
+          "task": 21,
+          "value": "29",
+          "is_multiline": false
+        },
+        {
+          "task": 22,
+          "value": "2148",
+          "is_multiline": false
+        },
+        {
+          "task": 23,
+          "value": "71760",
+          "is_multiline": false
+        },
+        {
+          "task": 24,
+          "value": "4886928",
+          "is_multiline": false
+        },
+        {
+          "task": 25,
+          "value": "4392829112, 66002\n4398819152, 66092\n43913449132, 659797\n43919439172, 659887\n43993649112, 661002\n43999639152, 661092",
+          "is_multiline": true
+        },
+        {
+          "task": 26,
+          "value": "48531409, 50032857",
+          "is_multiline": false
+        },
+        {
+          "task": 27,
+          "value": "3927, 1193\n8009, 24996",
+          "is_multiline": true
+        }
+      ]
+    },
+    {
+      "id": "var-05",
+      "number": 5,
+      "title": "Вариант 5",
+      "slug": "variant-5",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "variant_5.pdf",
+          "url": "/api/storage/pdf/81b3c0e4-7d69-4d69-950c-d69e10375776-var5.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var5.zip",
+            "url": "/assets/885a16cf-c67f-4c2f-b6bc-ab205871ef7f-var5.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/809e231b42fd72abc4048e1a2e28e125/?p=bP_U_2Mmicanxp3HvMRn_w",
+            "title": "Видеоразбор задания №24"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/0aa1a92141e79c9c50503af0df1e43ac/?p=etzsOm8yllSbR6M_IigVqQ",
+            "title": "Видеоразбор задания №26"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-06",
+      "number": 6,
+      "title": "Вариант 6",
+      "slug": "variant-6",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "variant_6.pdf",
+          "url": "/api/storage/pdf/5ad7db06-0f9f-4a08-88c3-0b5d0029a529-var6.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var6.zip",
+            "url": "/assets/585dde67-2e20-4bb0-9ce6-ef284f5b5c22-var6.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/c3420bfa397893f134efbc2113b73a7f/?p=HY0wKJ_V2uxf9R4tf6ksgA",
+            "title": "Видеоразбор задания №24"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/2dc3f2cd69cd293aead285e264e31743/?p=mmeWJE-Y5qmBmpsKeCr_ww",
+            "title": "Видеоразбор задания №26"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-07",
+      "number": 7,
+      "title": "Вариант 7",
+      "slug": "variant-7",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "variant_7.pdf",
+          "url": "/api/storage/pdf/483e8d36-ffdf-4aab-877a-5a43571d646f-var7.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var7.zip",
+            "url": "/assets/373eb4aa-9429-41b9-ace6-b57ce9708a18-var7.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/6a3521857fea0c14e1770ca30e716beb/?p=SZbIzNe8_2EJFROikigtbA",
+            "title": "Видеоразбор задания №24"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "video",
+          "content": {
+            "provider": "rutube",
+            "url": "https://rutube.ru/play/embed/a1f84026a11511afc0eb79dc1f41c17d/?p=NmYUcipNvw3tBoiENy4Ruw",
+            "title": "Видеоразбор задания №26"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-08",
+      "number": 8,
+      "title": "Вариант 8",
+      "slug": "variant-8",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "variant_8.pdf",
+          "url": "/api/storage/pdf/5a583452-3aae-4e76-8007-0f09d4f080ac-var8.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var8.zip",
+            "url": "/assets/ceb7f46c-cb52-4570-91e4-a794aa58861c-var8.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = next(open('24.txt')).strip()\nfor el in '2468': s = s.replace(el, '0')\nwhile '00' in s: s = s.replace('00', '0 0')\nprint(max(len(c) for c in s.split()))"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-09",
+      "number": 9,
+      "title": "Вариант 9",
+      "slug": "variant-9",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Новый PDF.pdf",
+          "url": "/api/storage/pdf/75c62f2f-f5b1-48ec-a87b-e1ad773d049d-var9.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var9.zip",
+            "url": "/assets/d0646e81-23ba-461a-b279-8df570a53d2c-var9.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = open('24.txt').readline().strip()\nwhile '++' in s.replace('*', '+'):\n    s = s.replace('**', '* *')\n    s = s.replace('*+', '* +')\n    s = s.replace('+*', '+ *')\n    s = s.replace('++', '+ +')\nmx = 0\nfor c in s.split():\n    while len(c) > 0 and c[0] in '*+': c = c[1:]\n    while len(c) > 0 and c[-1] in '*+': c = c[:-1]\n    if '+' in c or '*' in c:\n        if eval(c) == 0:\n            mx = max(mx, len(c))\nprint(mx)"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('26.txt')\nN, S = [int(el) for el in f.readline().split()]\na = []\nfor s in f:\n    ID, exam1, exam2, exam3, sobes = [int(el) for el in s.split()]\n    a += [[exam1+exam2+exam3, sobes, ID]]\na.sort()\na.reverse()\n\nprint(\n    a[S-1][0],\n    next(stud[2] for stud in a if stud[0] == a[S-1][0])\n)"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-10",
+      "number": 10,
+      "title": "Вариант 10",
+      "slug": "variant-10",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "variant_10.pdf",
+          "url": "/api/storage/pdf/3783f622-8d5a-42c4-a872-f0d2f6b1a788-var10.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var10.zip",
+            "url": "/assets/bd653353-673a-4936-8aed-27198c125bae-var10.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=((QS)+))'\nprint(max(len(c[1]) // 2 for c in re.finditer(reg, s)))"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-11",
+      "number": 11,
+      "title": "Вариант 11",
+      "slug": "variant-11",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "variant_11.pdf",
+          "url": "/api/storage/pdf/92f5a0b2-a809-497b-b36d-b23a1e09e5c8-var11.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var11.zip",
+            "url": "/assets/38cca79d-51a5-4a22-8a39-5348b3e3352d-var11.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=(([W][^W]){249}[W]))'\nprint(min(len(c[1]) for c in re.finditer(reg, s)))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('26.txt')\nn = int(f.readline())\na = sorted([int(el) for el in s.split()]\n           for s in f)\nsums = {}\nfor ID, art, cost in a:\n    if ID not in sums: sums[ID] = 0\n    sums[ID] += cost\nres = []\nclothes = [a[0][2]]\nfor i in range(n - 1):\n    if a[i][0] == a[i + 1][0] and a[i+1][1] == a[i][1] + 1:\n        clothes += [a[i][2]]\n    else:\n        clothes = [a[i + 1][2]]\n    res += [[len(clothes), -sums[a[i][0]], a[i][0]]]\nprint(*max(res)[::2][::-1])"
+          }
+        }
+      ],
+      "answers": [
+        {
+          "task": 1,
+          "value": "42",
+          "is_multiline": false
+        },
+        {
+          "task": 2,
+          "value": "yzwx",
+          "is_multiline": false
+        },
+        {
+          "task": 3,
+          "value": "151850",
+          "is_multiline": false
+        },
+        {
+          "task": 4,
+          "value": "5",
+          "is_multiline": false
+        },
+        {
+          "task": 5,
+          "value": "30",
+          "is_multiline": false
+        },
+        {
+          "task": 6,
+          "value": "270",
+          "is_multiline": false
+        },
+        {
+          "task": 7,
+          "value": "10647",
+          "is_multiline": false
+        },
+        {
+          "task": 8,
+          "value": "32",
+          "is_multiline": false
+        },
+        {
+          "task": 9,
+          "value": "17",
+          "is_multiline": false
+        },
+        {
+          "task": 10,
+          "value": "43",
+          "is_multiline": false
+        },
+        {
+          "task": 11,
+          "value": "15712",
+          "is_multiline": false
+        },
+        {
+          "task": 13,
+          "value": "224",
+          "is_multiline": false
+        },
+        {
+          "task": 14,
+          "value": "213336355",
+          "is_multiline": false
+        },
+        {
+          "task": 15,
+          "value": "20",
+          "is_multiline": false
+        },
+        {
+          "task": 16,
+          "value": "1768640267591769",
+          "is_multiline": false
+        },
+        {
+          "task": 17,
+          "value": "1, 301",
+          "is_multiline": false
+        },
+        {
+          "task": 18,
+          "value": "2912, 1126",
+          "is_multiline": false
+        },
+        {
+          "task": 19,
+          "value": "27",
+          "is_multiline": false
+        },
+        {
+          "task": 20,
+          "value": "102, 103",
+          "is_multiline": false
+        },
+        {
+          "task": 21,
+          "value": "100",
+          "is_multiline": false
+        },
+        {
+          "task": 22,
+          "value": "2957",
+          "is_multiline": false
+        },
+        {
+          "task": 23,
+          "value": "113",
+          "is_multiline": false
+        },
+        {
+          "task": 24,
+          "value": "5",
+          "is_multiline": false
+        },
+        {
+          "task": 25,
+          "value": "3232588143, 175751\n32225841903, 1752071\n32325899823, 1757511\n32525831733, 1768381\n32625889653, 1773821\n32825821563, 1784691\n32925879483, 1790131",
+          "is_multiline": true
+        },
+        {
+          "task": 26,
+          "value": "539, 11",
+          "is_multiline": false
+        },
+        {
+          "task": 27,
+          "value": "21373, 35210\n21709, 25726",
+          "is_multiline": true
+        }
+      ]
+    },
+    {
+      "id": "var-12",
+      "number": 12,
+      "title": "Вариант 12",
+      "slug": "variant-12",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "variant_12.pdf",
+          "url": "/api/storage/pdf/6d80948c-eb48-4a68-8d95-287c6ac0e9f0-var12.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var12.zip",
+            "url": "/assets/a45bb63a-58b5-4107-a71a-6405c25a7a0f-var12.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=(([W][^W]){249}[W]))'\nprint(min(len(c[1]) for c in re.finditer(reg, s)))"
+          }
+        }
+      ],
+      "answers": [
+        {
+          "task": 1,
+          "value": "15",
+          "is_multiline": false
+        },
+        {
+          "task": 2,
+          "value": "xzyw",
+          "is_multiline": false
+        },
+        {
+          "task": 3,
+          "value": "372",
+          "is_multiline": false
+        },
+        {
+          "task": 4,
+          "value": "23",
+          "is_multiline": false
+        },
+        {
+          "task": 5,
+          "value": "324",
+          "is_multiline": false
+        },
+        {
+          "task": 6,
+          "value": "90",
+          "is_multiline": false
+        },
+        {
+          "task": 7,
+          "value": "19725",
+          "is_multiline": false
+        },
+        {
+          "task": 8,
+          "value": "1176",
+          "is_multiline": false
+        },
+        {
+          "task": 9,
+          "value": "2",
+          "is_multiline": false
+        },
+        {
+          "task": 10,
+          "value": "5",
+          "is_multiline": false
+        },
+        {
+          "task": 11,
+          "value": "23856",
+          "is_multiline": false
+        },
+        {
+          "task": 12,
+          "value": "10",
+          "is_multiline": false
+        },
+        {
+          "task": 13,
+          "value": "21",
+          "is_multiline": false
+        },
+        {
+          "task": 14,
+          "value": "6647668931",
+          "is_multiline": false
+        },
+        {
+          "task": 15,
+          "value": "23",
+          "is_multiline": false
+        },
+        {
+          "task": 16,
+          "value": "1327824114940960",
+          "is_multiline": false
+        },
+        {
+          "task": 17,
+          "value": "239, 109250",
+          "is_multiline": false
+        },
+        {
+          "task": 18,
+          "value": "1811, 2634",
+          "is_multiline": false
+        },
+        {
+          "task": 19,
+          "value": "106",
+          "is_multiline": false
+        },
+        {
+          "task": 20,
+          "value": "27, 103",
+          "is_multiline": false
+        },
+        {
+          "task": 21,
+          "value": "100",
+          "is_multiline": false
+        },
+        {
+          "task": 22,
+          "value": "25345",
+          "is_multiline": false
+        },
+        {
+          "task": 23,
+          "value": "76076080",
+          "is_multiline": false
+        },
+        {
+          "task": 24,
+          "value": "42488",
+          "is_multiline": false
+        },
+        {
+          "task": 25,
+          "value": "1650004, 2200\n1650025, 880\n1650121, 400\n1650721, 72\n1650754, 2201\n1651504, 2202\n1651509, 1468",
+          "is_multiline": true
+        },
+        {
+          "task": 26,
+          "value": "275, 5",
+          "is_multiline": false
+        },
+        {
+          "task": 27,
+          "value": "18116, 72990\n28096, 28971",
+          "is_multiline": true
+        }
+      ]
+    },
+    {
+      "id": "var-13",
+      "number": 13,
+      "title": "Вариант 13",
+      "slug": "variant-13",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/12d2120a-c01b-4016-bc6f-a50f3b8e9bf3-var13.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var13.zip",
+            "url": "/assets/d40dfe46-f099-4bea-87d9-00e90b2d8ad8-var13.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = open('24.txt').readline().strip()\nwhile 'XX' in s: s = s.replace('XX', 'X X')\nmx = 0\nK = 100\nfor c in s.split():\n    if c.count('ZUTYW') < K: continue\n    elif c.count('ZUTYW') == K: mx = max(mx, len(c))\n    else:\n        while 'ZUTYW' in s: s = s.replace('ZUTYW', 'ZUTY UTYW')\n        c = [len(c) for c in s.split()]\n        summa = sum(c[:K+1]) - 3 * K\n        mx = max(mx, summa)\n        for i in range(K+1, len(c)):\n            summa += c[i] - c[i - (K+1)]\n            mx = max(mx, summa)\nprint(mx)"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('26.txt')\nN, M, K = [int(el) for el in f.readline().split()]\na = [set() for r in range(M+1)]\nfor s in f:\n    r, m = [int(el) for el in s.split()]\n    a[r].add(m)\nres = []\nfor r in range(2, M+1):\n    nums = sorted(a[r])\n    nums.reverse()\n    for i in range(len(nums) - 1):\n        if nums[i] - nums[i+1] == 1:\n            if nums[i] not in a[r-1]:\n                if nums[i+1] not in a[r-1]:\n                    res += [[r-1, nums[i + 1]]]\nprint(max(res))"
+          }
+        }
+      ],
+      "answers": [
+        {
+          "task": 1,
+          "value": "13",
+          "is_multiline": false
+        },
+        {
+          "task": 2,
+          "value": "wxyz",
+          "is_multiline": false
+        },
+        {
+          "task": 3,
+          "value": "982730",
+          "is_multiline": false
+        },
+        {
+          "task": 4,
+          "value": "10",
+          "is_multiline": false
+        },
+        {
+          "task": 5,
+          "value": "23",
+          "is_multiline": false
+        },
+        {
+          "task": 6,
+          "value": "306",
+          "is_multiline": false
+        },
+        {
+          "task": 7,
+          "value": "18",
+          "is_multiline": false
+        },
+        {
+          "task": 8,
+          "value": "8736",
+          "is_multiline": false
+        },
+        {
+          "task": 9,
+          "value": "164153",
+          "is_multiline": false
+        },
+        {
+          "task": 10,
+          "value": "41",
+          "is_multiline": false
+        },
+        {
+          "task": 11,
+          "value": "17",
+          "is_multiline": false
+        },
+        {
+          "task": 13,
+          "value": "28",
+          "is_multiline": false
+        },
+        {
+          "task": 14,
+          "value": "83",
+          "is_multiline": false
+        },
+        {
+          "task": 15,
+          "value": "11",
+          "is_multiline": false
+        },
+        {
+          "task": 16,
+          "value": "20886744154360500",
+          "is_multiline": false
+        },
+        {
+          "task": 17,
+          "value": "4373, 1979",
+          "is_multiline": false
+        },
+        {
+          "task": 18,
+          "value": "4334, 1411",
+          "is_multiline": false
+        },
+        {
+          "task": 19,
+          "value": "27",
+          "is_multiline": false
+        },
+        {
+          "task": 20,
+          "value": "103, 105",
+          "is_multiline": false
+        },
+        {
+          "task": 21,
+          "value": "102",
+          "is_multiline": false
+        },
+        {
+          "task": 22,
+          "value": "12",
+          "is_multiline": false
+        },
+        {
+          "task": 23,
+          "value": "28",
+          "is_multiline": false
+        },
+        {
+          "task": 24,
+          "value": "1228",
+          "is_multiline": false
+        },
+        {
+          "task": 25,
+          "value": "1000002, 3\n1000011, 3\n1000101, 3\n1001001, 3\n1010001, 3\n1100001, 3\n2000001, 3",
+          "is_multiline": true
+        },
+        {
+          "task": 26,
+          "value": "93064, 27293",
+          "is_multiline": false
+        },
+        {
+          "task": 27,
+          "value": "15130, 118272\n7445, 68641",
+          "is_multiline": true
+        }
+      ]
+    },
+    {
+      "id": "var-14",
+      "number": 14,
+      "title": "Вариант 14",
+      "slug": "variant-14",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/7df2fc98-9fa3-43e3-9c5b-e25c6efd8da5-var14.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var14.zip",
+            "url": "/assets/d625411c-2896-4b89-aaca-a760f69e754c-var14.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=(([E][^E]){2024}[E]))'\nprint(min(len(c[1]) for c in re.finditer(reg, s)))"
+          }
+        }
+      ],
+      "answers": [
+        {
+          "task": 1,
+          "value": "90",
+          "is_multiline": false
+        },
+        {
+          "task": 2,
+          "value": "xzwy",
+          "is_multiline": false
+        },
+        {
+          "task": 3,
+          "value": "78100",
+          "is_multiline": false
+        },
+        {
+          "task": 4,
+          "value": "8",
+          "is_multiline": false
+        },
+        {
+          "task": 5,
+          "value": "42",
+          "is_multiline": false
+        },
+        {
+          "task": 6,
+          "value": "72",
+          "is_multiline": false
+        },
+        {
+          "task": 7,
+          "value": "8",
+          "is_multiline": false
+        },
+        {
+          "task": 8,
+          "value": "34560",
+          "is_multiline": false
+        },
+        {
+          "task": 9,
+          "value": "604725",
+          "is_multiline": false
+        },
+        {
+          "task": 10,
+          "value": "10",
+          "is_multiline": false
+        },
+        {
+          "task": 11,
+          "value": "1841",
+          "is_multiline": false
+        },
+        {
+          "task": 12,
+          "value": "25",
+          "is_multiline": false
+        },
+        {
+          "task": 13,
+          "value": "128",
+          "is_multiline": false
+        },
+        {
+          "task": 14,
+          "value": "21945",
+          "is_multiline": false
+        },
+        {
+          "task": 15,
+          "value": "56",
+          "is_multiline": false
+        },
+        {
+          "task": 16,
+          "value": "9930",
+          "is_multiline": false
+        },
+        {
+          "task": 17,
+          "value": "2443, 196568",
+          "is_multiline": false
+        },
+        {
+          "task": 18,
+          "value": "3156, 1193",
+          "is_multiline": false
+        },
+        {
+          "task": 19,
+          "value": "81",
+          "is_multiline": false
+        },
+        {
+          "task": 20,
+          "value": "80, 155",
+          "is_multiline": false
+        },
+        {
+          "task": 21,
+          "value": "153",
+          "is_multiline": false
+        },
+        {
+          "task": 22,
+          "value": "3188",
+          "is_multiline": false
+        },
+        {
+          "task": 23,
+          "value": "7",
+          "is_multiline": false
+        },
+        {
+          "task": 24,
+          "value": "12320",
+          "is_multiline": false
+        },
+        {
+          "task": 25,
+          "value": "6798046394, 77911\n6798482664, 77916\n67980114924, 779106\n67980987464, 779116\n67981423734, 779121\n67982732544, 779136\n67984041354, 779151\n67984477624, 779156\n67984913894, 779161\n67985786434, 779171\n67987095244, 779186\n67988404054, 779201\n67988840324, 779206",
+          "is_multiline": true
+        },
+        {
+          "task": 26,
+          "value": "44, 38",
+          "is_multiline": false
+        },
+        {
+          "task": 27,
+          "value": "91923, 113283\n17374, 79079",
+          "is_multiline": true
+        }
+      ]
+    },
+    {
+      "id": "var-15",
+      "number": 15,
+      "title": "Вариант 15",
+      "slug": "variant-15",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/91ee91f8-f9b8-46c1-a41b-0072298c4432-var15.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var15.zip",
+            "url": "/assets/a73af5b7-282e-4078-905b-28b1a7dad630-var15.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=(([E][^E]){2024}[E]))'\nprint(min(len(c[1]) for c in re.finditer(reg, s)))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('test.txt')\nn, m, k = [int(el) for el in f.readline().split()]\na = {p:{0, M+1} for p in range(1, k+1)}\nfor s in f:\n    r, p = [int(el) for el in s.split()]\n    a[p].add(r)\nmn = (float('inf'), float('inf'))\nfor p in range(1, k+1):\n    places = sorted(a[p])\n    for i in range(len(places) - 1):\n        if places[i+1] - places[i] - 1 - 1 == 147:\n            mn = min(mn, (places[i+1]-1, -p))\nprint(mn[0], -mn[1])"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-16",
+      "number": 16,
+      "title": "Вариант 16",
+      "slug": "variant-16",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/83379198-49fd-4c33-a9e3-5e32f55735b5-var16.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var16.zip",
+            "url": "/assets/6e413777-dd49-49e2-a2fa-434b81db59d6-var16.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\ns = re.sub(r'[BCDFG]{2}[AE]', 'BB1BA', s)\nreg = r'(?=([^1]*))'\nprint(max(len(c[1])\nfor c in re.finditer(reg, s)))"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-17",
+      "number": 17,
+      "title": "Вариант 17",
+      "slug": "variant-17",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/76d82a74-2fcc-472e-b3e9-0924874b2d94-var17.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var17.zip",
+            "url": "/assets/e7263f55-e3f5-455e-91d4-7105d6f64ad3-var17.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = open('24.txt').readline().strip()\ns = s.replace('-', '*')\nwhile '**' in s: s = s.replace('**', '* *')\nwhile '*0' in s: s = s.replace('*0', '* 0')\nmx = 0\nfor c in s.split():\n    while len(c) > 0 and c[0] in '*0': c = c[1:]\n    while len(c) > 0 and c[-1] in '*': c = c[:-1]\n    if '*' in c: mx = max(mx, len(c))\nprint(mx)"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('26.txt')\nN, S = [int(el) for el in f.readline().split()]\na = []\nfor s in f:\n    ID, exam1, exam2, exam3, sobes = [int(el) for el in s.split()]\n    a += [[exam1+exam2+exam3, sobes, -ID]]\na.sort()\na.reverse()\nprint(\n    [stud[1] for stud in a if stud[0] == stud[S-1]][0],\n    -stud[S-1][2]\n)"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-18",
+      "number": 18,
+      "title": "Вариант 18",
+      "slug": "variant-18",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/3c3f1af1-572c-4e51-8859-b5a2167adda2-var18.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var18.zip",
+            "url": "/assets/3269cd83-b274-460d-a586-988f5ef21797-var18.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=([1-5][0-5]*))'\nprint(max(len(c[1])\nfor c in re.finditer(reg, s)))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('test.txt')\nn, k = [int(el) for el in f.readline().split()]\nkonv = [0 for i in range(k)]\na = []\nfor num in range(1, n+1):\n    st, pec = [int(el) for el in f.readline().split()]\n    a += [[st, 'С', num], [pec, 'П', num]]\n\nans1 = 0\nfor time, tip, num in sorted(a):\n    if num in konv:\n        konv[konv.index(num)] = 0\n        ans2 = num\n    elif 0 in konv:\n        if tip == 'С':\n            ans1 += 1\n            konv[konv.index(0)] = num\n        else:\n            konv.reverse()\n            konv[konv.index(0)] = num\n            konv.reverse()\n\nprint(ans1, ans2)"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-19",
+      "number": 19,
+      "title": "Вариант 19",
+      "slug": "variant-19",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/7361c0dd-1e98-45e3-a528-d5a01d1d98d1-var19.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var19.zip",
+            "url": "/assets/d8177911-1810-4463-9229-41c1898dfa51-var19.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = open('19_24.txt').readline().strip()\nk = c = 0\nfor i in range(len(s)):\n    if s[i] in '123456789': c += 1\n    if s[i] in '2468':\n        k += c + 1\n    if s[i] not in '123456789': c = 0\nprint(k)"
+          }
+        },
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "from re import *\n\ns = next(open('24.txt')).strip()\nreg = r'(?=([1-9]*[2468]))'\nmask = r'([1-9]*[2468]))'\nk = 0\nfor c in finditer(reg, s):\n    sub = c[1]\n    for i in range(len(sub)):\n        if fullmatch(mask, sub[:i+1]):\n            k += 1\nprint(k)"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('test.txt')\nn = int(next(f))\ntimes = [0 for i in range(1441)]\nfor s in f:\n    st, time = [int(el) for el in s.split()]\n    for i in range(st, min(1440, st + time)):\n        times[i] += 1\n\nres = []\nf = open('test.txt')\nn = int(next(f))\nfor s in f:\n    st, time = [int(el) for el in s.split()]\n    for i in range(st, min(1440, st + time)):\n        times[i] -= 1\n    if 0 not in times:\n        res += [min(1440, st + time) - st]\n    for i in range(st, min(1440, st + time)):\n        times[i] += 1\nprint(len(res), max(res))"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-20",
+      "number": 20,
+      "title": "Вариант 20",
+      "slug": "variant-20",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/13c776aa-4ce0-4429-996c-3388566f22f4-var20.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var20.zip",
+            "url": "/assets/c3e06e3c-ef87-4b93-ac60-179a6007d383-var20.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\ns = s.replace('AB', '1')\nreg = r'(?=(1[^1]*1))'\nprint(max(len(c[1].replace('1', 'AB'))\nfor c in re.finditer(reg, s)))"
+          }
+        },
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = open('24.txt').readline().strip()\ns = [len(c) for c in s.split('AB')][1:-1]\nprint(max(s) + len('AB') * 2)"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-21",
+      "number": 21,
+      "title": "Вариант 21",
+      "slug": "variant-21",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/278608e6-ac2a-4b7c-94e0-2e69dd10c555-var21.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var21.zip",
+            "url": "/assets/2c7429e1-5693-4121-b193-17ab561f56bd-var21.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\n# Первый вариант: CDPUYZ....CDP(UYZ - по возможности)\nreg = r'(?=((CDPUYZ)+(CDP)?))'\nprint(max(len(c[1])\nfor c in re.finditer(reg, s)))\n\n# Второй вариант: UYZCDP....UYZ(CDP - по возможности)\nreg = r'(?=((UYZCDP)+(UYZ)?))'\nprint(max(len(c[1])\nfor c in re.finditer(reg, s)))"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-22",
+      "number": 22,
+      "title": "Вариант 22",
+      "slug": "variant-22",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/28437a83-1892-479b-9ba6-bc7ded20a680-var22.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var22.zip",
+            "url": "/assets/99ae8e2b-3958-4012-b60b-52112b1ddcc6-var22.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = open('24.txt').readline().strip()\nfor el in 'YZ': s = s.replace(el, 'X')\nfor el in '12': s = s.replace(el, '0')\nwhile 'XX' in s or '00' in s:\n  s = s.replace('XX', 'X X').replace('00', '0 0')\nprint(max(len(c) for c in s.split()))"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-23",
+      "number": 23,
+      "title": "Вариант 23",
+      "slug": "variant-23",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/4aee5ae7-2c6a-4f36-9739-65a8e4014fb1-var23.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var23.zip",
+            "url": "/assets/e2257b97-d698-4d39-bcdd-be3724c16c3b-var23.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=([13579]+)'\nprint(max(len(c[1])\nfor c in re.finditer(reg, s)))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('26.txt')\nk = int(f.readline())\nn = int(f.readline())\na = sorted(\n  [int(el) for el in s.split()]\n  for s in f\n)\n\nbank_free = [0] * k\nbank_time = [0] * k\nbank_counter = [0] * k\nfor st, time in a:\n  for i in reversed(range(k)):\n    if st >= bank_free[i] and st + time <= 1440:\n      bank_free[i] = st + time\n      bank_time[i] += time\n      bank_counter[i] += 1\n      break\n\nprint(max(bank_time),\n      bank_counter.index(max(bank_counter)) + 1)"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-24",
+      "number": 24,
+      "title": "Вариант 24",
+      "slug": "variant-24",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/1d3d52ce-4755-4733-9908-30dde6c79b64-var24.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var24.zip",
+            "url": "/assets/d0b1927b-6233-40c8-9ed2-dd28225bd9d4-var24.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = next(open('24.txt'))\ns = s.replace('TXYW', 'TXY1XYW')\nreg = r'(?=((TXY1[^1]*){60}))'\nres =[]\nfor c in finditer(reg, s):\n    res += [len(c[1].replace('1XY', ''))]\nprint(max(res))"
+          }
+        },
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = next(open('24.txt'))\ns = s.replace('TXYW', '1')\nreg = r'(?=(([1][^1]*){60}[1]))'\nres =[]\nfor c in finditer(reg, s):\n    res += [len(c[1].replace('1', 'TXYW'))]\nprint(max(res) - 1)"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-25",
+      "number": 25,
+      "title": "Вариант 25",
+      "slug": "variant-25",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/4426679d-6fa1-4e86-aac2-a43d687741ce-var25.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var25.zip",
+            "url": "/assets/cd0386f2-863c-4d98-8ea3-bf31a7e4ba86-var25.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=([WCN]+[1-9]+)'\nprint(max(len(c[1])\nfor c in re.finditer(reg, s)))"
+          }
+        },
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = open('24.txt').readline().strip()\nfor el in 'CN': s = s.replace(el, 'W')\nfor el in '23456789': s = s.replace(el, '1')\nc = ''\nmx = 0\nwhile c + 'W' in s:\n  c += 'W'\n  c1 = c\n  while c1 + '1' in s:\n    c1 += '1'\n    mx = max(mx, len(c1))\nprint(mx)"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "n, *a = map(int, open('1_26.txt'))\na.sort(); a.reverse()\nres = [a[0]]\nfor el in a[1:]:\n  if res[-1] - el >= 4:\n    res += [el]\nprint(len(res), res[-2] - a[-1])"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-26",
+      "number": 26,
+      "title": "Вариант 26",
+      "slug": "variant-26",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/4a2dd411-ac5d-41d3-a5b1-809e51a52cf5-var26.pdf"
+        },
+        "attachments": [
+          {
+            "type": "zip",
+            "label": "Материалы к варианту",
+            "filename": "var26.zip",
+            "url": "/assets/f44d27cf-7ffd-4471-aad5-fc76bc7e9e1b-var26.zip"
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'([1-B][0-B]*[13579B])'\nprint(max([int(c[0], 12), c.start() + 1]\nfor c in re.finditer(reg, s))[1])"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('test.txt')\nN, K, M = map(int, f.readline().split())\nlevel = [-float('inf')] + [int(next(f)) for _ in range(K)]\nstudents = []\nfor s in f:\n    nums = [int(el) for el in s.split()]\n    max_difficulty = max(level[i] for i in nums)\n    if max_difficulty != -float('inf'):\n        students.append(min_difficulty)\n\nstudents.sort()\ncount = 0\ntotal_sum = 0\n\nfor i in range(len(students)):\n  if total_sum + students[i] <= M:\n      total_sum += students[i]\n      count += 1\n\nprint(count, total_sum)"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-27",
+      "number": 27,
+      "title": "Вариант 27",
+      "slug": "variant-27",
+      "materials": {
+        "main_document": {
+          "type": "pdf",
+          "filename": "Условия.pdf",
+          "url": "/api/storage/pdf/f7dfeb17-9815-42b0-8bff-f93aed0afafc-var27.pdf"
+        },
+        "attachments": []
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\n\n# Важно! Указываем в порядке приоритета добора\n# (иначе возьмет только C)\nreg = r'(?=((CDPUYZ)+(CDPUY|CDPU|CDP|CD|C)?))'\nprint(max(len(c[1])\nfor c in re.finditer(reg, s)))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('test1.txt')\nn = int(next(f))\na = []\nfor i in range(1, n+1):\n    st, pec = [int(el) for el in next(f).split()]\n\n    if st > pec:\n        a += [[st, i, 'С'], [pec, i, 'П']]\n        \"\"\"\n            В первую очередь производится max(st, pec)\n            Если max(st, pec) == st, то обработка детали\n            будет сначала на станке, потом на печи \n        \"\"\"\n    else:\n        \"\"\"\n            Если max(st, pec) == pec, то обработка детали будет\n            только на печи\n        \"\"\"\n        a += [[pec, i, 'П']]\n\n\"\"\"\n    Так как у нас N мест для размещения N деталей - свободное место будет всегда\n    Значит, мы можем не контролировать места для деталей (так как нумерация мест не \n    важна в задаче)\n\"\"\"\nkonv = set()\nsum_time_of_pec = 0\n# Сортируем набор данных по убыванию длительности обработки на одном приборе\nfor time, num, tip in reversed(sorted(a)):\n    if tip == 'П':\n        # Заметим, что деталь перемещается только в том случае, когда происходит обработка на печи\n        # (но только после обработки на станке)\n        if num in konv:\n            ans = [num, sum_time_of_pec]\n        sum_time_of_pec += time\n    else:\n        # Если деталь обрабатывается на станке, добавляем её на ленту\n        konv.add(num)\nprint(*ans)"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-28",
+      "number": 28,
+      "title": "Вариант 28",
+      "slug": "variant-28",
+      "materials": {
+        "main_document": {},
+        "attachments": []
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\n\ns = next(open('24.txt'))\npat = r'(?=(10*10*))'\nprint(max(len(c[1]) for c in re.finditer(pat, s)))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('26.txt')\n# продано, цена, осталось, артикул\na = [[0, 0, 0, art] for art in range(100001)]\nn = int(f.readline())\nfor s in f:\n    art, cost, status = [int(el) for el in s.split()]\n    a[art][1] = cost\n    if status == 0: a[art][0] += 1\n    else: a[art][2] -= 1\nsr = sum(tovar[1] for tovar in a) / len(a)\na = sorted( tovar for tovar in a \n            if tovar[1] != 0 and tovar[1] > sr )\na.reverse()\nprint(a[0][3], a[0][0])"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-29",
+      "number": 29,
+      "title": "Вариант 29",
+      "slug": "variant-29",
+      "materials": {
+        "main_document": {},
+        "attachments": []
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "from string import *\n\ns = open('3_24.txt').readline().strip()\nalf = f'{digits}{ascii_uppercase}'[:19]\nfor el in alf:\n  s = s.replace(el, '1')\nwhile 90 * '1' in s:\n  s = s.replace(90 * '1', 89 * '1' + ' ' + 89 * '1')\nprint(max(len(c) for c in s.split()))"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-30",
+      "number": 30,
+      "title": "Вариант 30",
+      "slug": "variant-30",
+      "materials": {
+        "main_document": {},
+        "attachments": []
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = open('24.txt').readline().strip()\nn = len(s)\n\nkA = [0] * n\nkB = [0] * n\nkC = [0] * n\n\nfor i in range(n):\n    if s[i] == 'A': kA[i] = kA[i-1] + 1\n    if s[i] == 'B': kB[i] = kB[i-1] + 1\n    if s[i] == 'C': kC[i] = kC[i-1] + 1\n\nmx = 0\nfor i in range(n):\n    if i+kB[i] < n:\n        if kA[i-kB[i]] >= kB[i] and kC[i+kB[i]] == kB[i]:\n            mx = max(mx, kB[i] * 3)\nprint(mx)"
+          }
+        },
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=(A+B+C+))'\nprint(max(len(c[1])\nfor c in re.finditer(reg, s)))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('26.txt')\nn = int(f.readline())\na = []\nfor s in f:\n    ID, height, weight, rating = [int(el) for el in s.split()]\n    a += [[rating, height, weight, ID]]\na.sort()\na.reverse()\nfirst = [(ID, height)\n         for rating, height, weight, ID in a\n         if rating == a[n//2][0]][0]\nprint(\n    first[0],\n    sum(height == first[1] for rating, height, weight, ID in a[:n//2])\n)"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-31",
+      "number": 31,
+      "title": "Вариант 31",
+      "slug": "variant-31",
+      "materials": {
+        "main_document": {},
+        "attachments": []
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = open('24.txt').readline().strip()\nfor el in 'BFL':\n  while el*2 in s:\n    s = s.replace(el*2, el + ' ' + el)\n\nmx = 0\nfor c in s.split():\n  while len(c) > 0 and c[-1] == 'L':\n    c = c[:-1]\n  mx = max(mx, len(c))\nprint(mx)"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('26.txt')\nn = int(f.readline())\na = []\nfor s in f:\n  st, time = [int(el) for el in s.split()]\n  if st + time <= 1440: a += [[st+time, st]]\na.sort()\n\nres = [a[0]]\nfor end, st in a:\n  if st >= res[-1][0]:\n    res += [[end, st]]\nprint(res)\npause = []\nfor i in range(n):\n  for j in range(i + 1, n):\n    if a[i][1] >= res[-3][0]:\n      if a[j][1] >= a[i][0]:\n        pause += [a[j][1] - a[i][0]]\nprint(len(res), min(pause))"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-32",
+      "number": 32,
+      "title": "Вариант 32",
+      "slug": "variant-32",
+      "materials": {
+        "main_document": {},
+        "attachments": []
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=(([1-D][0-D]*|0)(([+*]([1-D][0-D]*|0)){5})))'\nprint(max(len(c[1]) for c in re.finditer(reg, s)))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "with open('26.txt') as f:\n    N, M, K = [int(el) for el in f.readline().split()]\n    a = [[0 for j in range(K+2)] for i in range(M+2)]\n    dp = [[0 for j in range(K+1)] for i in range(M+1)]\n    for s in f:\n        x, y = [int(el) for el in s.split()]\n        a[x][y] = 1\nres = []\nfor i in range(1, M+1):\n    k = 0\n    for j in range(1, K+1):\n        if a[i][j] == 1: k += 1\n        else: k = 0\n        dp[i][j] = k\n        if k and a[i][j+1] == a[i+1][j] == 0:\n            min_row = i\n            while min_row - 1 >= 0 and dp[min_row-1][j] == k:\n                min_row -= 1\n            count_rows = i - min_row + 1\n            if count_rows * k >= 1500:\n                res += [[j, -min_row]]\nprint(len(res), -max(res)[1])"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "with open('26.txt') as f:\n    N, M, K = [int(el) for el in f.readline().split()]\n    data = []\n    for s in f:\n        y, x = [int(el) for el in s.split()]\n        data += [[y, x]]\n\ndata.sort()\nships = []\nfor y1,x1 in data:\n    cl_num = None\n    for i in reversed(range(len(ships))):\n        if any(x1 == x2 and y1-y2 == 1 or y1==y2 and x1-x2 == 1\n               for y2, x2 in ships[i]):\n            cl_num = i\n            break\n    if cl_num is None: ships += [[[y1, x1]]]\n    else: ships[cl_num] += [[y1, x1]]\n\nres = []\nfor shape in ships:\n    if len(shape) >= 1500:\n        res += [[shape[-1][1], -shape[0][0]]]\n\nprint(len(res), -max(res)[1])"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('test.txt')\nN, M, K = [int(el) for el in f.readline().split()]\ndp = [[0 for j in range(K + 2)] for i in range(M + 2)]\na = []\ncounter = 3\nres = []\nfor s in f:\n    ryad, num = [int(el) for el in s.split()]\n    a += [[ryad, num]]\na.sort()\nfor ryad, num in a:\n    dp[ryad][num] = dp[ryad][num - 1] + 1\n    if dp[ryad][num + 1] == 0:\n        R = ryad\n        while dp[R][num] == dp[ryad][num]: R -= 1\n        if dp[ryad][num] * (ryad - R) >= counter:\n            res += [[num, -(R+1)]]\nprint(len(res), max(res))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('26.txt')\nn, m, k = [int(el) for el in f.readline().split()]\na = sorted(tuple(int(el) for el in s.split()) for s in f)\ndata = set(a)\nk = 1\nres = []\nfor i in range(n):\n    r, m = a[i]\n    r2 = r\n    if a[i][1] == a[i-1][1] + 1 and a[i][0]==a[i-1][0]: k += 1\n    else: k = 1\n    if (r + 1, m) not in data and (r, m + 1) not in data:\n        while (r2-1, m) in data: r2-=1\n        if k * (r - r2 + 1) >= 1500:\n            res += [[m, -r2]]\nprint(len(res), -max(res)[1])"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-33",
+      "number": 33,
+      "title": "Вариант 33",
+      "slug": "variant-33",
+      "materials": {
+        "main_document": {},
+        "attachments": []
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nreg = r'(?=([1-9][0-9]*))'\nprint(max(len(c[1])\nfor c in re.finditer(reg, s)))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "n, *a = map(int, open('26.txt'))\na.sort()\na.reverse()\nans = []\nfor st in range(n):\n  for i in range(st + 1, n):\n    res = [a[st], a[i]]\n    for j in range(i + 1, n):\n      if res[-1] - a[j] == a[st] - a[i]:\n        res += [a[j]]\n        ans += [(len(res), sum(res[:-1]))]\nprint(*max(ans))"
+          }
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "var-34",
+      "number": 34,
+      "title": "Вариант 34",
+      "slug": "variant-34",
+      "materials": {
+        "main_document": {},
+        "attachments": []
+      },
+      "solutions": [
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "import re\ns = next(open('24.txt')).strip()\nfor el in '468ACE': s = s.replace(el, '2')\nreg = r'(?=([1-F]+))'\nres = []\nfor c in re.finditer(reg, s):\n    sub = c[1]\n    if sub.count('2') % 2 != 0:\n        res += [len(sub)]\n    elif '2' in sub: \n        res += [len(sub[sub.index('2') + 1:])]\n        res += [len(sub[:sub.rindex('2')])]\nprint(max(res))"
+          }
+        },
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = next(open('24.txt')).strip()\nfor el in '468ACE': \n    s = s.replace(el, '2')\nfor el in f'{digits}{ascii_uppercase}'[16:]:\n    s = s.replace(el, ' ')\nres = []\nfor sub in s.split():\n    if sub.count('2') % 2 != 0:\n        res += [len(sub)]\n    elif '2' in sub:\n        res += [len(sub[sub.index('2') + 1:])]\n        res += [len(sub[:sub.rindex('2')])]\nprint(max(res))"
+          }
+        },
+        {
+          "task_number": 24,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "s = next(open('24.txt'))\nfor el in f'{digits}{ascii_uppercase}'[:16:2]:\n    s = s.replace(el, '2')\nreg = r'(?=([1-F]+))'\nres = []\nfor c in finditer(reg, s):\n    sub = c[1]\n    if '2' in sub:\n        while sub.count('2') % 2 == 0: sub = sub[:-1]\n        res += [len(sub)]\nprint(max(res))"
+          }
+        },
+        {
+          "task_number": 26,
+          "type": "code",
+          "content": {
+            "language": "python",
+            "title": "Код решения (python)",
+            "snippet": "f = open('26.txt')\nn = int(f.readline())\na = []\nfor s in f:\n    ID, exam1, exam2, exam3 = [int(el) for el in s.split()]\n    exams = [exam1, exam2, exam3]\n    if exams.count(2) == 0:\n         a += [[-exams.count(2), sum(exams), -ID]]\n    else:\n         a += [[-exams.count(2), -ID]]\nprint(-a[n // 5][-1],\n      [stud[-1] for stud in a if stud[0] > 2][0])"
+          }
+        }
+      ],
+      "answers": []
+    }
+  ]
+}

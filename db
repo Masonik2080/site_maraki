@@ -1,0 +1,550 @@
+
+-- WARNING: This schema is for context only and is not meant to be run.
+-- Table order and constraints may not be valid for execution.
+
+CREATE TABLE public.access_log (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  user_id uuid NOT NULL,
+  product_id_external text NOT NULL,
+  product_type text NOT NULL,
+  grantor_id uuid,
+  order_item_id bigint,
+  reason text,
+  expires_at timestamp with time zone,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  action USER-DEFINED NOT NULL,
+  grantor_type USER-DEFINED NOT NULL,
+  package_id text,
+  CONSTRAINT access_log_pkey PRIMARY KEY (id),
+  CONSTRAINT access_log_order_item_id_fkey FOREIGN KEY (order_item_id) REFERENCES public.order_items(id),
+  CONSTRAINT access_log_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id),
+  CONSTRAINT access_log_grantor_id_fkey FOREIGN KEY (grantor_id) REFERENCES public.profiles(user_id)
+);
+CREATE TABLE public.backup_download_logs (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  backup_path text NOT NULL,
+  downloader_id uuid,
+  downloader_email text,
+  CONSTRAINT backup_download_logs_pkey PRIMARY KEY (id),
+  CONSTRAINT backup_download_logs_downloader_id_fkey FOREIGN KEY (downloader_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.balance_history (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL,
+  session_id uuid,
+  type text NOT NULL,
+  amount numeric NOT NULL,
+  description text,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  receipt_number bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  transaction_id uuid,
+  CONSTRAINT balance_history_pkey PRIMARY KEY (id),
+  CONSTRAINT balance_history_session_id_fkey FOREIGN KEY (session_id) REFERENCES public.individual_sessions(id),
+  CONSTRAINT balance_history_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id),
+  CONSTRAINT balance_history_transaction_id_fkey FOREIGN KEY (transaction_id) REFERENCES public.transactions(id)
+);
+CREATE TABLE public.banners (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  title text NOT NULL,
+  content text NOT NULL,
+  status text NOT NULL DEFAULT 'draft'::text,
+  display_pages ARRAY,
+  display_style jsonb,
+  is_closable boolean NOT NULL DEFAULT true,
+  cookie_name text NOT NULL UNIQUE,
+  cookie_duration_days integer NOT NULL DEFAULT 30,
+  start_date timestamp with time zone,
+  end_date timestamp with time zone,
+  is_for_unauthenticated_only boolean NOT NULL DEFAULT false,
+  show_once boolean NOT NULL DEFAULT false,
+  show_per_session boolean NOT NULL DEFAULT false,
+  reappear_after_days integer,
+  CONSTRAINT banners_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.board_permissions (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  board_id uuid NOT NULL,
+  user_id uuid NOT NULL,
+  permission_level USER-DEFINED NOT NULL,
+  CONSTRAINT board_permissions_pkey PRIMARY KEY (id),
+  CONSTRAINT board_permissions_board_id_fkey FOREIGN KEY (board_id) REFERENCES public.boards(id),
+  CONSTRAINT board_permissions_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.boards (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  owner_id uuid NOT NULL,
+  title text NOT NULL,
+  content jsonb,
+  is_public boolean NOT NULL DEFAULT false,
+  updated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT boards_pkey PRIMARY KEY (id),
+  CONSTRAINT boards_owner_id_fkey FOREIGN KEY (owner_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.cart_items (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  cart_id uuid NOT NULL,
+  product_id_external text NOT NULL,
+  product_type text NOT NULL,
+  quantity integer NOT NULL DEFAULT 1,
+  added_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT cart_items_pkey PRIMARY KEY (id),
+  CONSTRAINT cart_items_cart_id_fkey FOREIGN KEY (cart_id) REFERENCES public.carts(id)
+);
+CREATE TABLE public.carts (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL UNIQUE,
+  metadata jsonb,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT carts_pkey PRIMARY KEY (id),
+  CONSTRAINT carts_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.chat_messages (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  conversation_id uuid NOT NULL,
+  sender_id uuid,
+  content text NOT NULL CHECK (char_length(content) > 0),
+  is_from_support boolean NOT NULL DEFAULT false,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  attachments jsonb,
+  edited_at timestamp with time zone,
+  is_deleted boolean NOT NULL DEFAULT false,
+  CONSTRAINT chat_messages_pkey PRIMARY KEY (id),
+  CONSTRAINT chat_messages_conversation_id_fkey FOREIGN KEY (conversation_id) REFERENCES public.conversations(id),
+  CONSTRAINT chat_messages_sender_id_fkey FOREIGN KEY (sender_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.codeme_sessions (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  user1_id uuid NOT NULL,
+  user2_id uuid,
+  user1_code text DEFAULT '-- Начните писать ваш код здесь'::text,
+  user2_code text DEFAULT '-- Ожидание второго пользователя...'::text,
+  CONSTRAINT codeme_sessions_pkey PRIMARY KEY (id),
+  CONSTRAINT codeme_sessions_user1_id_fkey FOREIGN KEY (user1_id) REFERENCES auth.users(id),
+  CONSTRAINT codeme_sessions_user2_id_fkey FOREIGN KEY (user2_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.conversations (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  client_id uuid NOT NULL,
+  title text NOT NULL,
+  status USER-DEFINED NOT NULL DEFAULT 'new'::ticket_status_v2,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  tags ARRAY DEFAULT ARRAY[]::text[],
+  internal_notes text,
+  priority USER-DEFINED NOT NULL DEFAULT 'medium'::ticket_priority,
+  is_starred boolean NOT NULL DEFAULT false,
+  is_pinned boolean NOT NULL DEFAULT false,
+  CONSTRAINT conversations_pkey PRIMARY KEY (id),
+  CONSTRAINT conversations_client_id_fkey FOREIGN KEY (client_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.individual_sessions (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  client_id uuid NOT NULL,
+  start_time timestamp with time zone NOT NULL,
+  end_time timestamp with time zone NOT NULL,
+  notes text,
+  status text NOT NULL DEFAULT 'scheduled'::text,
+  price numeric DEFAULT 0.00 CHECK (price >= 0::numeric),
+  recurring_schedule_id uuid,
+  CONSTRAINT individual_sessions_pkey PRIMARY KEY (id),
+  CONSTRAINT individual_sessions_client_id_fkey FOREIGN KEY (client_id) REFERENCES auth.users(id),
+  CONSTRAINT individual_sessions_recurring_schedule_id_fkey FOREIGN KEY (recurring_schedule_id) REFERENCES public.recurring_schedules(id)
+);
+CREATE TABLE public.invoice_items (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  invoice_id uuid NOT NULL,
+  session_id uuid NOT NULL,
+  description text NOT NULL,
+  amount numeric NOT NULL,
+  status text NOT NULL DEFAULT 'pending'::text,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT invoice_items_pkey PRIMARY KEY (id),
+  CONSTRAINT invoice_items_invoice_id_fkey FOREIGN KEY (invoice_id) REFERENCES public.invoices(id),
+  CONSTRAINT invoice_items_session_id_fkey FOREIGN KEY (session_id) REFERENCES public.individual_sessions(id)
+);
+CREATE TABLE public.invoices (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL,
+  status text NOT NULL DEFAULT 'pending'::text,
+  total_amount numeric NOT NULL CHECK (total_amount >= 0::numeric),
+  balance_applied numeric NOT NULL DEFAULT 0 CHECK (balance_applied >= 0::numeric),
+  amount_due numeric NOT NULL CHECK (amount_due >= 0::numeric),
+  issue_date date NOT NULL DEFAULT CURRENT_DATE,
+  due_date date,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  paid_at timestamp with time zone,
+  metadata jsonb,
+  CONSTRAINT invoices_pkey PRIMARY KEY (id),
+  CONSTRAINT invoices_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.lesson_boards (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  lesson_id text NOT NULL UNIQUE,
+  content jsonb,
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT lesson_boards_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.link_payments (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  link_id uuid NOT NULL,
+  amount numeric NOT NULL,
+  payment_method character varying NOT NULL,
+  payer_info jsonb,
+  payer_user_id uuid,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  provider_transaction_id text,
+  CONSTRAINT link_payments_pkey PRIMARY KEY (id),
+  CONSTRAINT link_payments_link_id_fkey FOREIGN KEY (link_id) REFERENCES public.payment_links(id),
+  CONSTRAINT link_payments_payer_user_id_fkey FOREIGN KEY (payer_user_id) REFERENCES public.profiles(user_id)
+);
+CREATE TABLE public.notification_templates (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  trigger_event text NOT NULL,
+  title text NOT NULL,
+  message text NOT NULL,
+  link text,
+  type text NOT NULL DEFAULT 'default'::text,
+  delay_minutes integer NOT NULL DEFAULT 0,
+  is_active boolean NOT NULL DEFAULT true,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT notification_templates_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.notifications (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid,
+  type text NOT NULL,
+  title text NOT NULL,
+  message text,
+  link text,
+  is_read boolean NOT NULL DEFAULT false,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  metadata jsonb,
+  CONSTRAINT notifications_pkey PRIMARY KEY (id),
+  CONSTRAINT notifications_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.profiles(user_id)
+);
+CREATE TABLE public.order_items (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  order_id uuid NOT NULL,
+  product_id_external text NOT NULL,
+  product_type text NOT NULL,
+  product_name_at_purchase text NOT NULL,
+  price_at_purchase numeric NOT NULL,
+  quantity integer NOT NULL DEFAULT 1,
+  discount_amount numeric NOT NULL DEFAULT 0.00,
+  product_title text,
+  CONSTRAINT order_items_pkey PRIMARY KEY (id),
+  CONSTRAINT order_items_order_id_fkey FOREIGN KEY (order_id) REFERENCES public.orders(id)
+);
+CREATE TABLE public.order_promocodes (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  order_id uuid NOT NULL,
+  promocode_id uuid NOT NULL,
+  discount_applied numeric NOT NULL,
+  CONSTRAINT order_promocodes_pkey PRIMARY KEY (id),
+  CONSTRAINT order_promocodes_order_id_fkey FOREIGN KEY (order_id) REFERENCES public.orders(id)
+);
+CREATE TABLE public.orders (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid,
+  status USER-DEFINED NOT NULL DEFAULT 'awaiting_payment'::order_status,
+  subtotal_amount numeric NOT NULL,
+  discount_amount numeric NOT NULL DEFAULT 0.00,
+  total_amount numeric NOT NULL,
+  currency character varying NOT NULL DEFAULT 'RUB'::character varying,
+  metadata jsonb,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  provider_payment_id text,
+  paid_at timestamp with time zone,
+  CONSTRAINT orders_pkey PRIMARY KEY (id),
+  CONSTRAINT orders_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.payment_link_payments (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  link_id uuid,
+  user_id uuid,
+  contact_info text,
+  contact_type character varying,
+  provider_payment_id character varying,
+  payment_method character varying,
+  status character varying DEFAULT 'pending'::character varying,
+  created_at timestamp with time zone DEFAULT now(),
+  paid_at timestamp with time zone,
+  metadata jsonb DEFAULT '{}'::jsonb,
+  CONSTRAINT payment_link_payments_pkey PRIMARY KEY (id),
+  CONSTRAINT payment_link_payments_link_id_fkey FOREIGN KEY (link_id) REFERENCES public.payment_links(id),
+  CONSTRAINT payment_link_payments_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.payment_links (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  amount numeric NOT NULL,
+  description text,
+  is_single_use boolean NOT NULL DEFAULT true,
+  is_active boolean NOT NULL DEFAULT true,
+  required_fields jsonb,
+  created_by uuid,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  code character varying NOT NULL UNIQUE,
+  status USER-DEFINED DEFAULT 'active'::payment_link_status,
+  allow_sbp boolean DEFAULT true,
+  allow_card boolean DEFAULT true,
+  allow_tpay boolean DEFAULT true,
+  requires_auth boolean DEFAULT false,
+  usage_type character varying NOT NULL DEFAULT 'single'::character varying,
+  max_uses integer,
+  current_uses integer DEFAULT 0,
+  expires_at timestamp with time zone,
+  CONSTRAINT payment_links_pkey PRIMARY KEY (id),
+  CONSTRAINT payment_links_created_by_fkey FOREIGN KEY (created_by) REFERENCES public.profiles(user_id)
+);
+CREATE TABLE public.payment_logs (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  transaction_id uuid,
+  order_id uuid,
+  event_type text NOT NULL,
+  event_data jsonb,
+  provider_status text,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  ip_address inet,
+  user_agent text,
+  CONSTRAINT payment_logs_pkey PRIMARY KEY (id),
+  CONSTRAINT payment_logs_transaction_id_fkey FOREIGN KEY (transaction_id) REFERENCES public.transactions(id),
+  CONSTRAINT payment_logs_order_id_fkey FOREIGN KEY (order_id) REFERENCES public.orders(id)
+);
+CREATE TABLE public.problem_categories (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  name text NOT NULL,
+  number text,
+  parent_id uuid,
+  display_order integer NOT NULL DEFAULT 0,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  is_public boolean NOT NULL DEFAULT true,
+  CONSTRAINT problem_categories_pkey PRIMARY KEY (id),
+  CONSTRAINT problem_categories_parent_id_fkey FOREIGN KEY (parent_id) REFERENCES public.problem_categories(id)
+);
+CREATE TABLE public.problems (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  category_id uuid NOT NULL,
+  internal_id text,
+  source text,
+  status text NOT NULL DEFAULT 'draft'::text,
+  difficulty text NOT NULL DEFAULT 'medium'::text,
+  tags ARRAY,
+  attachments jsonb,
+  display_order integer NOT NULL DEFAULT 0,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  solutions_count integer NOT NULL DEFAULT 0,
+  content jsonb,
+  solution_content text,
+  answer jsonb,
+  CONSTRAINT problems_pkey PRIMARY KEY (id),
+  CONSTRAINT problems_category_id_fkey FOREIGN KEY (category_id) REFERENCES public.problem_categories(id)
+);
+CREATE TABLE public.profiles (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL UNIQUE,
+  updated_at timestamp with time zone DEFAULT now(),
+  role text DEFAULT 'user'::text,
+  balance numeric NOT NULL DEFAULT 0.00,
+  full_name text,
+  username text UNIQUE CHECK (username ~ '^[a-zA-Z0-9_]{3,20}$'::text),
+  avatar_url text,
+  bio text,
+  pin_hash text,
+  pin_set_at timestamp with time zone,
+  birthday date,
+  gender text,
+  vk_user_id text UNIQUE,
+  watermark_id text NOT NULL DEFAULT substr(replace((gen_random_uuid())::text, '-'::text, ''::text), 1, 16) UNIQUE,
+  extra_spins integer DEFAULT 0,
+  CONSTRAINT profiles_pkey PRIMARY KEY (id),
+  CONSTRAINT profiles_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.promocode_usages (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  promocode_id uuid NOT NULL,
+  user_id uuid NOT NULL,
+  order_id uuid NOT NULL,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT promocode_usages_pkey PRIMARY KEY (id),
+  CONSTRAINT promocode_usages_promocode_id_fkey FOREIGN KEY (promocode_id) REFERENCES public.promocodes(id),
+  CONSTRAINT promocode_usages_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id),
+  CONSTRAINT promocode_usages_order_id_fkey FOREIGN KEY (order_id) REFERENCES public.orders(id)
+);
+CREATE TABLE public.promocodes (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  code text NOT NULL UNIQUE,
+  description text,
+  discount_type USER-DEFINED NOT NULL,
+  discount_value numeric NOT NULL,
+  valid_from timestamp with time zone,
+  valid_until timestamp with time zone,
+  max_uses integer,
+  max_uses_per_user integer,
+  min_order_amount numeric,
+  applicable_products ARRAY,
+  current_uses integer NOT NULL DEFAULT 0,
+  is_active boolean NOT NULL DEFAULT true,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  disables_other_discounts boolean NOT NULL DEFAULT false,
+  exclude_products boolean NOT NULL DEFAULT false,
+  CONSTRAINT promocodes_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.quick_replies (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  title text NOT NULL,
+  text text NOT NULL,
+  tags ARRAY,
+  created_by uuid,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT quick_replies_pkey PRIMARY KEY (id),
+  CONSTRAINT quick_replies_created_by_fkey FOREIGN KEY (created_by) REFERENCES auth.users(id)
+);
+CREATE TABLE public.recurring_schedules (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  client_id uuid NOT NULL,
+  day_of_week integer NOT NULL,
+  start_time time without time zone NOT NULL,
+  end_time time without time zone NOT NULL,
+  price numeric NOT NULL DEFAULT 1500,
+  notes text,
+  start_date date NOT NULL,
+  end_date date,
+  is_active boolean NOT NULL DEFAULT true,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT recurring_schedules_pkey PRIMARY KEY (id),
+  CONSTRAINT recurring_schedules_client_id_fkey FOREIGN KEY (client_id) REFERENCES public.profiles(user_id)
+);
+CREATE TABLE public.reviews (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL,
+  product_id_external text NOT NULL,
+  product_type text NOT NULL,
+  rating smallint NOT NULL CHECK (rating >= 1 AND rating <= 5),
+  title text,
+  text text,
+  is_published boolean NOT NULL DEFAULT false,
+  order_item_id bigint,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT reviews_pkey PRIMARY KEY (id),
+  CONSTRAINT reviews_order_item_id_fkey FOREIGN KEY (order_item_id) REFERENCES public.order_items(id),
+  CONSTRAINT reviews_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.roles (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  name text NOT NULL UNIQUE CHECK (char_length(name) > 2),
+  description text,
+  permissions ARRAY NOT NULL DEFAULT ARRAY[]::text[],
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone NOT NULL DEFAULT now(),
+  display_name text NOT NULL,
+  CONSTRAINT roles_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.site_settings (
+  id integer NOT NULL DEFAULT nextval('site_settings_id_seq'::regclass),
+  category character varying NOT NULL,
+  key character varying NOT NULL,
+  value jsonb,
+  created_at timestamp with time zone DEFAULT now(),
+  updated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT site_settings_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.student_invites (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  token text NOT NULL DEFAULT uuid_generate_v4() UNIQUE,
+  student_email text NOT NULL,
+  expires_at timestamp with time zone NOT NULL,
+  status USER-DEFINED NOT NULL DEFAULT 'pending'::invite_status,
+  created_by uuid NOT NULL,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  accepted_at timestamp with time zone,
+  accepted_by_user_id uuid,
+  CONSTRAINT student_invites_pkey PRIMARY KEY (id),
+  CONSTRAINT student_invites_created_by_fkey FOREIGN KEY (created_by) REFERENCES auth.users(id),
+  CONSTRAINT student_invites_accepted_by_user_id_fkey FOREIGN KEY (accepted_by_user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.system_settings (
+  setting_name text NOT NULL,
+  is_enabled boolean NOT NULL DEFAULT false,
+  config jsonb,
+  updated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT system_settings_pkey PRIMARY KEY (setting_name)
+);
+CREATE TABLE public.ticket_ratings (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  ticket_id uuid NOT NULL UNIQUE,
+  user_id uuid NOT NULL,
+  rating smallint NOT NULL CHECK (rating >= 1 AND rating <= 5),
+  comment text,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT ticket_ratings_pkey PRIMARY KEY (id),
+  CONSTRAINT ticket_ratings_ticket_id_fkey FOREIGN KEY (ticket_id) REFERENCES public.conversations(id),
+  CONSTRAINT ticket_ratings_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.transactions (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  order_id uuid NOT NULL,
+  user_id uuid,
+  payment_provider text NOT NULL,
+  provider_transaction_id text UNIQUE,
+  status USER-DEFINED NOT NULL DEFAULT 'pending'::transaction_status,
+  amount numeric NOT NULL,
+  currency character varying NOT NULL DEFAULT 'RUB'::character varying,
+  payment_method_details jsonb,
+  error_message text,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  processed_at timestamp with time zone,
+  CONSTRAINT transactions_pkey PRIMARY KEY (id),
+  CONSTRAINT transactions_order_id_fkey FOREIGN KEY (order_id) REFERENCES public.orders(id),
+  CONSTRAINT transactions_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.user_activity_log (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  session_id uuid NOT NULL,
+  user_id uuid,
+  anonymous_id uuid,
+  event_type text NOT NULL,
+  event_data jsonb,
+  timestamp timestamp with time zone NOT NULL DEFAULT now(),
+  ip_address inet,
+  user_agent text,
+  parsed_user_agent jsonb,
+  geo_data jsonb,
+  CONSTRAINT user_activity_log_pkey PRIMARY KEY (id),
+  CONSTRAINT user_activity_log_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.user_course_access (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  user_id uuid NOT NULL,
+  course_id text NOT NULL,
+  granted_at timestamp with time zone DEFAULT now(),
+  package_id text,
+  product_title text,
+  CONSTRAINT user_course_access_pkey PRIMARY KEY (id),
+  CONSTRAINT user_course_access_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.user_restrictions (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL,
+  restriction_type USER-DEFINED NOT NULL,
+  conversation_id uuid,
+  reason text,
+  expires_at timestamp with time zone,
+  created_by_admin_id uuid NOT NULL,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT user_restrictions_pkey PRIMARY KEY (id),
+  CONSTRAINT user_restrictions_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id),
+  CONSTRAINT user_restrictions_conversation_id_fkey FOREIGN KEY (conversation_id) REFERENCES public.conversations(id),
+  CONSTRAINT user_restrictions_created_by_admin_id_fkey FOREIGN KEY (created_by_admin_id) REFERENCES auth.users(id)
+);

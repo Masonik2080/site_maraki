@@ -1,0 +1,904 @@
+{
+  "id": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+  "slug": "ekspress-kurs-bistrii-start-8879",
+  "title": "Экспресс-курс «Быстрый старт»",
+  "description": "Короткий курс по всему материалу, необходимому для 80+ баллов",
+  "thumbnailUrl": "https://64.media.tumblr.com/c33fabdf39d8129358cc28b721ee9305/8e7c5241fc6761c8-3c/s2048x3072/b7b9525d4b65c90f5a036a72d9f33577a643e9d3.jpg",
+  "isPublic": true,
+  "isPreorder": false,
+  "price": 1499,
+  "originalPrice": 3999,
+  "subtitle": "Новый курс",
+  "iconName": "Zap",
+  "popular": false,
+  "features": [
+    {
+      "text": "20+ часов вебинаров в записи"
+    },
+    {
+      "text": "Вся необходимая теория и база по заданиям для 80+ баллов"
+    },
+    {
+      "text": "Задания для самостоятельной практики"
+    },
+    {
+      "text": "Разбор заданий №1, 2, 3, 4, 7, 8, 9, 11, 12, 13, 16, 17, 18, 22, 24, 26, 27"
+    },
+    {
+      "text": "Вебинары, по итогам которых подготовилось более 30 стобалльников"
+    }
+  ],
+  "sections": [
+    {
+      "id": "unassigned",
+      "title": "Прочие модули",
+      "order": 1000,
+      "modules": [
+        {
+          "id": "module-ed7ce6b8-1eb7-46d4-8863-3d323b7b4069",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Задания 1, 10, 16, 3",
+          "order": 100,
+          "isFree": false,
+          "lessons": []
+        },
+        {
+          "id": "module-132d8487-808f-4acb-abb8-725f3a75a467",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Задания 1, 16, 10, 3",
+          "order": 100,
+          "isFree": false,
+          "lessons": [
+            {
+              "id": "lesson-77025adf-09e4-484e-ae81-39491f3ed1a8",
+              "title": "Вебинар",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "video",
+                  "title": "",
+                  "videoId": "5d05fb0a-8b2c-4906-8ce7-e1af02e21333",
+                  "_hydration_error": "Видео с ID '5d05fb0a-8b2c-4906-8ce7-e1af02e21333' не найдено в videos.json"
+                }
+              ]
+            },
+            {
+              "id": "lesson-b923d94f-6404-4877-9039-9cdeb5ac5348",
+              "title": "Доп. вебинар (Решение задания №1 кодом)",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "",
+                  "embedUrl": "https://rutube.ru/play/embed/7a29d5106706986f58e90b8130a89e6e"
+                }
+              ]
+            },
+            {
+              "id": "lesson-f8e216de-befc-4e3c-a640-1b97160a960f",
+              "title": "Домашнее задание (№1)",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "pdf-viewer",
+                  "title": "Задания",
+                  "fileUrl": "/api/storage/pdf/899f7dec-0a7d-4fdc-b58a-03c8438a9d7d-1.pdf"
+                },
+                {
+                  "type": "answers",
+                  "title": "Проверка ответов",
+                  "items": [
+                    {
+                      "id": "f0265ef9-9d04-4fcc-bbb5-f28d5849d960",
+                      "number": "1",
+                      "correctAnswers": [
+                        [
+                          "42"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "df4eff38-f05f-4ffe-8473-9a067a782745",
+                      "number": "2",
+                      "correctAnswers": [
+                        [
+                          "45"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "d787ebdc-d66f-45c9-b0ec-ba3e325d25c8",
+                      "number": "3",
+                      "correctAnswers": [
+                        [
+                          "37"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "de339eab-2962-48cc-a8d6-841588f4aee8",
+                      "number": "4",
+                      "correctAnswers": [
+                        [
+                          "45"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "ecc2fca3-c1d2-4b24-9691-fbee44103d4f",
+                      "number": "5",
+                      "correctAnswers": [
+                        [
+                          "19"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "295f60cc-74a5-45be-a235-e3ebe89b38b2",
+                      "number": "6",
+                      "correctAnswers": [
+                        [
+                          "67"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "49f50b73-dba7-4779-91fe-861c62ae062c",
+                      "number": "7",
+                      "correctAnswers": [
+                        [
+                          "15"
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "divider",
+                  "title": "Видеоразборы задач"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №1",
+                  "embedUrl": "https://rutube.ru/play/embed/2e2123b79a0f27c6029e03dea6264c08/?p=5BWdB_E1VMbXcBg9DUSqAw"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №2",
+                  "embedUrl": "https://rutube.ru/play/embed/4cf7379c18705a733429a4e23fc624cb/?p=IwpEmROvJSixKZkmqK1AUg"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №3",
+                  "embedUrl": "https://rutube.ru/play/embed/ee8ddd5df15ebdb2bb6ff2d421e1dee7/?p=CHd63Vm1oQfy1LJ66y4LnQ"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №4",
+                  "embedUrl": "https://rutube.ru/play/embed/05e03deca7832e6135050ea445333e58/?p=VWG7RkCVM4L-1hpgaFE9yg"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №5",
+                  "embedUrl": "https://rutube.ru/play/embed/62137bbc7e629db7c9bf5877d0658f02/?p=nsRy1CAdQu_aZrydDQhLHg"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №6",
+                  "embedUrl": "https://rutube.ru/play/embed/e805af01670a4cdac405fb452ca7f8c2/?p=9PTG3DpG9iFZDyNQWpTHBw"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №7",
+                  "embedUrl": "https://rutube.ru/play/embed/78ba7eff3511530185f005ddd90b182d/?p=xCfA29iNFqPovlvCruUlyw"
+                }
+              ]
+            },
+            {
+              "id": "lesson-5d2731d8-94e9-4b5a-a8c3-41b9659bfbee",
+              "title": "Домашнее задание (№16)",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "pdf-viewer",
+                  "title": "Задачи",
+                  "fileUrl": "/api/storage/pdf/4341f1ca-8843-491f-8752-1726aacd4848-16.pdf"
+                },
+                {
+                  "type": "divider",
+                  "title": "Видеоразборы задач"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №1",
+                  "embedUrl": "https://rutube.ru/play/embed/626d006a5042c4e8996b3c932d4d2767/?p=HKp2KC6rTwZBYqeoe0vGcQ"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №2",
+                  "embedUrl": "https://rutube.ru/play/embed/4f08aba4737803f1c55a1da9b7d357ad/?p=Xkn0zsCNDQke_j_-7cqbTw"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №3",
+                  "embedUrl": "https://rutube.ru/play/embed/c0fdd04b5b74a2e148509c5ef0814044/?p=_BdpZ_5T27vbnWy6rTj2Tw"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №4",
+                  "embedUrl": "https://rutube.ru/play/embed/19af9ea5f5d1f6e61206bcd74825833a/?p=74AcLUEtJvA_ajWcI_ItwA"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №5",
+                  "embedUrl": "https://rutube.ru/play/embed/dcbe398d00be4e0bc8059208599f4046/?p=qX-v1UUYEe4ghSmyn9UWLQ"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №6",
+                  "embedUrl": "https://rutube.ru/play/embed/265d1df0b156884eb2504e69bedf1a98/?p=-lghyZvufX-y7OH9_AAv7w"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор №7",
+                  "embedUrl": "https://rutube.ru/play/embed/092b72c8516b71284009608eaf1e54f3/?p=y9EXaTFze23N2EYa9hfRJQ"
+                }
+              ]
+            },
+            {
+              "id": "lesson-cd83ee93-887b-4b78-815d-8debf1410d63",
+              "title": "Домашнее задание (№10)",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "pdf-viewer",
+                  "title": "",
+                  "fileUrl": "/api/storage/pdf/bd7c9f74-67a2-4766-9671-7ff42ec73596-10.pdf"
+                },
+                {
+                  "type": "files",
+                  "title": "Прикрепленные файлы",
+                  "files": [
+                    {
+                      "success": true,
+                      "url": "/assets/49ad0b99-e58f-4dba-aa0c-9847daef8431-10.zip",
+                      "name": "10.zip",
+                      "size": 2197645
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "lesson-05850f6c-eb51-4651-8cc5-0ba0cfdee5a0",
+              "title": "Домашнее задание (№3)",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "pdf-viewer",
+                  "title": "",
+                  "fileUrl": "/api/storage/pdf/0d1eebcf-5f93-443b-899c-abf7572e8ac3-3.pdf"
+                },
+                {
+                  "type": "files",
+                  "title": "Прикрепленные файлы",
+                  "files": [
+                    {
+                      "success": true,
+                      "url": "/assets/c264be51-a18c-4835-aaca-edebc421619e-3.zip",
+                      "name": "3.zip",
+                      "size": 920978
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "module-f1f1f668-03d6-4855-a918-ab2f7367995f",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Задания 4, 7, 11, 18",
+          "order": 100,
+          "isFree": false,
+          "lessons": [
+            {
+              "id": "lesson-182b1c35-3ce5-4245-a361-1dfcdda39752",
+              "title": "Вебинар",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "",
+                  "embedUrl": "https://rutube.ru/play/embed/82afc76cced2dfc88f1512e5bffec7e7/?p=oJTlSq3Sx4QI-ryOn9hDFQ"
+                }
+              ]
+            },
+            {
+              "id": "lesson-2b01a567-8e3d-4aac-ae04-a12a47745616",
+              "title": "Доп. вебинар (Решение задания №4 кодом)",
+              "order": 100,
+              "contentBlocks": []
+            },
+            {
+              "id": "lesson-127ed109-2345-40e9-8649-c5e74103f2b5",
+              "title": "Домашнее задание (№4)",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "pdf-viewer",
+                  "title": "",
+                  "fileUrl": "/api/storage/pdf/5e718246-0c2e-46e7-bdf0-d4aba92d0a52-4.pdf"
+                }
+              ]
+            },
+            {
+              "id": "lesson-d41da68f-f606-4aeb-ac36-c56eee59e9ae",
+              "title": "Домашнее задание (№7)",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "pdf-viewer",
+                  "title": "",
+                  "fileUrl": "/api/storage/pdf/5d72883a-adbb-4135-8fa1-adc015cb6ff6-7.pdf"
+                }
+              ]
+            },
+            {
+              "id": "lesson-2ac112d6-e624-4922-b3a3-94e08563a870",
+              "title": "Домашнее задание (№11)",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "pdf-viewer",
+                  "title": "",
+                  "fileUrl": "/api/storage/pdf/87b33763-7c35-4c42-9ee9-5580eea7f107-11.pdf"
+                }
+              ]
+            },
+            {
+              "id": "lesson-f4d21224-3b2c-4a10-ac7e-4f16fc7bffb7",
+              "title": "Домашнее задание (№18)",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "pdf-viewer",
+                  "title": "Задачи",
+                  "fileUrl": "/api/storage/pdf/d868ae76-7f85-4f3b-81b1-08ce2864ef28-18.pdf"
+                },
+                {
+                  "type": "files",
+                  "title": "Прикрепленные файлы",
+                  "files": [
+                    {
+                      "success": true,
+                      "url": "/assets/bdb5e54b-d208-4202-901c-9b3123e2a066-18.zip",
+                      "name": "18.zip",
+                      "size": 64979
+                    }
+                  ]
+                },
+                {
+                  "type": "answers",
+                  "title": "Проверка ответов",
+                  "items": [
+                    {
+                      "id": "32ea1319-38d3-4ed8-bb42-302fc5400721",
+                      "number": "1",
+                      "correctAnswers": [
+                        [
+                          "1476",
+                          "2466"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "0d7eb4ac-da5b-47bb-8ad3-7b00f1fb1640",
+                      "number": "2",
+                      "correctAnswers": [
+                        [
+                          "1144",
+                          "2352"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "ee0959e6-1b99-4fd0-8289-1b7ff0e849c8",
+                      "number": "3",
+                      "correctAnswers": [
+                        [
+                          "2420",
+                          "486"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "6ba7dadf-ab2c-4316-bfdd-d14eef3c46a1",
+                      "number": "4",
+                      "correctAnswers": [
+                        [
+                          "440",
+                          "2425"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "af76ee87-ed8f-4242-a071-d6037cefd14a",
+                      "number": "5",
+                      "correctAnswers": [
+                        [
+                          "2204",
+                          "384"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "cec4c3da-aab5-49c7-aa8c-7670d90a1ef6",
+                      "number": "6",
+                      "correctAnswers": [
+                        [
+                          "2560",
+                          "1669"
+                        ]
+                      ]
+                    },
+                    {
+                      "id": "272257a7-1813-4506-8481-f5828290f2df",
+                      "number": "7",
+                      "correctAnswers": [
+                        [
+                          "2172",
+                          "407"
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "divider",
+                  "title": "Видеоразборы"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор задачи №1",
+                  "embedUrl": "https://rutube.ru/play/embed/8b89652f3f61a1426fa04baa03204239/?p=IjxVUqWthBn_d6WqFnP3ng"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор задачи №2",
+                  "embedUrl": "https://rutube.ru/play/embed/d67e992d7e00082be1ed1924307a8e7b/?p=lVWLeJ-uM44C4k1jgNwIzQ"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор задачи №3",
+                  "embedUrl": "https://rutube.ru/play/embed/f98b5d22df317bf3304e2b35229ab5e5/?p=WUdd7sBZJFLdEabvJSivNw"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор задачи №4",
+                  "embedUrl": "https://rutube.ru/play/embed/0cc458bd812f4f4bddd621d6d321412e/?p=sjn4xhrkL4uwDxnScLXy0A"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор задачи №5",
+                  "embedUrl": "https://rutube.ru/play/embed/1abc8f98fa54e946659257c72338073c/?p=GEM7OR9NmZBi_rlaWBMDiw"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор задачи №6",
+                  "embedUrl": "https://rutube.ru/play/embed/ff1252e81c4f79ab329ead97830df0b9/?p=dIu8tblcwC7DkRp0SfQwBg"
+                },
+                {
+                  "type": "rutube",
+                  "title": "Видеоразбор задачи №7",
+                  "embedUrl": "https://rutube.ru/play/embed/bfebc27d031e1d41bb5bea17f063a308/?p=j8GptCdD9V9C6UPSTYsgmQ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "module-0c050002-d5ad-49a9-9d12-c32540afe9ae",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Задания 2, 8",
+          "order": 100,
+          "isFree": false,
+          "lessons": [
+            {
+              "id": "lesson-49caf449-64ab-4145-9bb9-219f1cde571f",
+              "title": "Вебинар",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "Rutube Видео",
+                  "embedUrl": "https://rutube.ru/play/embed/b20803abafcb1b09a38317d3d011950b/?p=S5xW6_cECctOSORbsGR97g"
+                }
+              ]
+            },
+            {
+              "id": "lesson-9df65764-fdc8-4459-b291-e79ca8ac9053",
+              "title": "Домашнее задание (№2)",
+              "order": 100,
+              "contentBlocks": []
+            },
+            {
+              "id": "lesson-9121fc17-9137-4a64-b6d8-56c792dc5481",
+              "title": "Домашнее задание (№8)",
+              "order": 100,
+              "contentBlocks": []
+            }
+          ]
+        },
+        {
+          "id": "module-e8960245-0d6d-4db9-baf6-5c7feadfe8a3",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Задания 13, 22",
+          "order": 100,
+          "isFree": false,
+          "lessons": [
+            {
+              "id": "lesson-cf371942-2028-4095-a5c1-09269ad5ded0",
+              "title": "Вебинар",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "",
+                  "embedUrl": "https://rutube.ru/play/embed/b4fc2da13bc8548f4a266e951694c759/?p=OMOacMvYX3pO98s4fLX7XA"
+                }
+              ]
+            },
+            {
+              "id": "lesson-00799a3f-8f46-4445-95f1-7160fa659196",
+              "title": "Домашнее задание (№13)",
+              "order": 100,
+              "contentBlocks": []
+            },
+            {
+              "id": "lesson-7dab781e-bcd5-4df8-bf8a-f798996a55db",
+              "title": "Домашнее задание (№22)",
+              "order": 100,
+              "contentBlocks": []
+            }
+          ]
+        },
+        {
+          "id": "module-f05588d0-3f21-460c-8ffb-faae3af0549e",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Задание 27 (Центры кластеров и разные вопросы)",
+          "order": 100,
+          "isFree": false,
+          "lessons": [
+            {
+              "id": "lesson-75a10ce5-a4ff-4638-af44-f0421934da71",
+              "title": "Вебинар",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "",
+                  "embedUrl": "https://rutube.ru/play/embed/f680c2ca1799a10f914801cf48108f68/?p=LqH72qw36bZbKp83yHNw_A"
+                }
+              ]
+            },
+            {
+              "id": "lesson-0470c2e3-aa85-4884-b45b-8d011b6806f3",
+              "title": "Домашнее задание",
+              "order": 100,
+              "contentBlocks": []
+            }
+          ]
+        },
+        {
+          "id": "module-366f7397-0ef0-4bf3-968c-358ed1569af3",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Задание 26 (Основные прототипы прошлых лет)",
+          "order": 100,
+          "isFree": false,
+          "lessons": [
+            {
+              "id": "lesson-700a11fd-70fb-4cda-a624-5066ef87db1b",
+              "title": "Вебинар",
+              "order": 100,
+              "contentBlocks": []
+            },
+            {
+              "id": "lesson-30e356b5-e9b9-48be-8656-7ed8d46ba74f",
+              "title": "Домашнее задание",
+              "order": 100,
+              "contentBlocks": []
+            }
+          ]
+        },
+        {
+          "id": "module-fe40dae6-d10f-46e9-84cf-00ae85fa8bd9",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Задание 24 (Основные способы решения)",
+          "order": 100,
+          "isFree": false,
+          "isPublic": true,
+          "lessons": [
+            {
+              "id": "lesson-c875a75e-090c-4d82-aa75-e3c2cd654a1a",
+              "title": "Вебинар",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "",
+                  "embedUrl": "https://rutube.ru/play/embed/6ae1da0a1bc36e7c4192e14d889768a8/?p=URzMEBkyr7A5IrmqSvEvaQ"
+                }
+              ]
+            },
+            {
+              "id": "lesson-535e47bb-c137-4897-813e-a456be325c32",
+              "title": "Доп. вебинар (Регулярные выражения)",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "",
+                  "embedUrl": "https://rutube.ru/play/embed/a589881e8b69797ede7c5252273c1ef1/?p=xydUM51XGB4vQIGFVfuMhw"
+                }
+              ]
+            },
+            {
+              "id": "lesson-6fe203a4-a066-4da5-95ef-345ad5ef7745",
+              "title": "Домашнее задание",
+              "order": 100,
+              "contentBlocks": []
+            }
+          ]
+        },
+        {
+          "id": "module-4829abd8-a857-40c3-8c0d-44af952f5a78",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Задания 17, 9",
+          "order": 100,
+          "isFree": false,
+          "isPublic": true,
+          "lessons": [
+            {
+              "id": "lesson-3f729a25-9ba7-49cc-8758-45bf6d6a130d",
+              "title": "Вебинар по основам задания №9",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "",
+                  "embedUrl": "https://rutube.ru/play/embed/65465cfa488fb9f3b1ffba3f769df99b/?p=TOFKLwRasofZijXAXUPB5Q"
+                }
+              ]
+            },
+            {
+              "id": "lesson-544cc27f-7347-4248-bfd3-842e4686e819",
+              "title": "Вебинар",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "",
+                  "embedUrl": "https://rutube.ru/play/embed/ad67aedd6ddb07da214f17a74fc662ac/?p=LQVv6Hd72KTtPQjlHSJCKQ"
+                }
+              ]
+            },
+            {
+              "id": "lesson-4ea0dcc0-670e-4902-85d6-9b2d049bee89",
+              "title": "Домашнее задание (№17)",
+              "order": 100,
+              "contentBlocks": []
+            },
+            {
+              "id": "lesson-60a6cb56-bb9f-4fa3-837b-b592185705b6",
+              "title": "Домашнее задание (№9)",
+              "order": 100,
+              "contentBlocks": []
+            }
+          ]
+        },
+        {
+          "id": "module-efe7cf3a-8131-4116-b50e-d88837e98d7e",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Станция КЕГЭ",
+          "order": 100,
+          "isFree": false,
+          "isPublic": true,
+          "lessons": [
+            {
+              "id": "lesson-3f7e04ef-aaf9-43b5-bc90-f136a15f579c",
+              "title": "Как работать со станцией КЕГЭ? Полная инструкция",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "",
+                  "embedUrl": "https://rutube.ru/play/embed/e099e8295ef14c2d65c672694ab38e97"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "module-cf76b081-3569-48e2-840e-f099813aac70",
+          "courseId": "course-600da44c-66c6-4073-b137-7ca0831ad364",
+          "title": "Задание 12",
+          "order": 100,
+          "isFree": true,
+          "isPublic": true,
+          "lessons": [
+            {
+              "id": "lesson-9ad5f181-b56b-418b-a321-6f93da37cd11",
+              "title": "Вебинар",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "rutube",
+                  "title": "",
+                  "embedUrl": "https://rutube.ru/play/embed/af2b529875951f0c21992e5483dc83c3/?p=839yDp4kFkQiWoAfZKBvGg"
+                }
+              ]
+            },
+            {
+              "id": "lesson-14d10f19-8ddf-408a-a4bf-ebdf8a4c089e",
+              "title": "Домашнее задание",
+              "order": 100,
+              "contentBlocks": [
+                {
+                  "type": "divider",
+                  "title": "Пример №1"
+                },
+                {
+                  "type": "task",
+                  "title": "Задача из банка",
+                  "problemId": "57493b5d-f79f-427a-97d1-0721daa2d1e9",
+                  "_hydration_error": "Задача с ID '57493b5d-f79f-427a-97d1-0721daa2d1e9' не найдена в tasks.json"
+                },
+                {
+                  "type": "answers",
+                  "title": "Проверка ответов",
+                  "items": [
+                    {
+                      "id": "be1cc7b1-8681-4375-b655-0bdfa05357af",
+                      "number": "",
+                      "correctAnswers": [
+                        [
+                          "543"
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rutube",
+                  "title": "Разбор",
+                  "embedUrl": "https://rutube.ru/play/embed/77274ef61cdd9590c1ce2a5ed10959c6"
+                },
+                {
+                  "type": "divider",
+                  "title": "Задача №2"
+                },
+                {
+                  "type": "task",
+                  "title": "Задача из банка",
+                  "problemId": "fffa49fc-7aa4-4044-a293-8a3736cf2ad2",
+                  "_hydration_error": "Задача с ID 'fffa49fc-7aa4-4044-a293-8a3736cf2ad2' не найдена в tasks.json"
+                },
+                {
+                  "type": "answers",
+                  "title": "Проверка ответов",
+                  "items": [
+                    {
+                      "id": "96a89ce3-fd61-4b5c-a25e-9374d436b788",
+                      "number": "676",
+                      "correctAnswers": [
+                        [
+                          ""
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rutube",
+                  "title": "Разбор",
+                  "embedUrl": "https://rutube.ru/play/embed/40d6ed1d046141156a2d90e159853569"
+                },
+                {
+                  "type": "divider",
+                  "title": "Задача №3"
+                },
+                {
+                  "type": "task",
+                  "title": "Задача из банка",
+                  "problemId": "d7c4009e-59a8-4b3a-b44d-53dc999cd0b5",
+                  "_hydration_error": "Задача с ID 'd7c4009e-59a8-4b3a-b44d-53dc999cd0b5' не найдена в tasks.json"
+                },
+                {
+                  "type": "answers",
+                  "title": "Проверка ответов",
+                  "items": [
+                    {
+                      "id": "d63c079c-8b4c-47ae-8cae-c2c4ec4ace06",
+                      "number": "",
+                      "correctAnswers": [
+                        [
+                          "867"
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rutube",
+                  "title": "Разбор",
+                  "embedUrl": "https://rutube.ru/play/embed/ba824b7692d50abaffdbf5ac0e03e6fe"
+                },
+                {
+                  "type": "divider",
+                  "title": "Задача №4"
+                },
+                {
+                  "type": "task",
+                  "title": "Задача из банка",
+                  "problemId": "3d10e5cf-a040-48b6-b754-e9ba6fb063c6",
+                  "_hydration_error": "Задача с ID '3d10e5cf-a040-48b6-b754-e9ba6fb063c6' не найдена в tasks.json"
+                },
+                {
+                  "type": "answers",
+                  "title": "Проверка ответов",
+                  "items": [
+                    {
+                      "id": "b0345c3a-dba0-49ef-8d8d-3818eea1a691",
+                      "number": "",
+                      "correctAnswers": [
+                        [
+                          "425"
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rutube",
+                  "title": "Разбор",
+                  "embedUrl": "https://rutube.ru/play/embed/e4c54f1d8889ae9dddb7a2a4e64f8f88"
+                },
+                {
+                  "type": "divider",
+                  "title": "Задача №5"
+                },
+                {
+                  "type": "task",
+                  "title": "Задача из банка",
+                  "problemId": "bab109c9-d013-43ef-a7b8-f00a2bf1aa7c",
+                  "_hydration_error": "Задача с ID 'bab109c9-d013-43ef-a7b8-f00a2bf1aa7c' не найдена в tasks.json"
+                },
+                {
+                  "type": "answers",
+                  "title": "Проверка ответов",
+                  "items": [
+                    {
+                      "id": "aa24beab-9a10-4531-b5fd-d12840ea29bc",
+                      "number": "",
+                      "correctAnswers": [
+                        [
+                          "879"
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rutube",
+                  "title": "Разбор",
+                  "embedUrl": "https://rutube.ru/play/embed/a58c8e4e34295ec1abf138da36c0304b"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
