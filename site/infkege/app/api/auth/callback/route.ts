@@ -21,9 +21,14 @@ function getSafeRedirectUrl(next: string | null): string {
 }
 
 export async function GET(request: NextRequest) {
-  const { searchParams, origin } = new URL(request.url);
+  const { searchParams } = new URL(request.url);
   const code = searchParams.get('code');
   const next = getSafeRedirectUrl(searchParams.get('next'));
+
+  // Get the real origin from headers or env (Docker returns 0.0.0.0 for request.url)
+  const host = request.headers.get('x-forwarded-host') || request.headers.get('host');
+  const protocol = request.headers.get('x-forwarded-proto') || 'https';
+  const origin = host ? `${protocol}://${host}` : process.env.NEXT_PUBLIC_SITE_URL || 'https://infkege.ru';
 
   if (code) {
     const supabase = await getSupabaseServerClient();
