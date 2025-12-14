@@ -49,6 +49,18 @@ jobs:
         working-directory: site/infkege
         env:
           NEXT_TELEMETRY_DISABLED: 1
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
+          NEXT_PUBLIC_APP_URL: ${{ secrets.NEXT_PUBLIC_APP_URL }}
+          VIDEO_PROCESSOR_URL: ${{ secrets.VIDEO_PROCESSOR_URL }}
+          TINKOFF_TERMINAL_KEY: ${{ secrets.TINKOFF_TERMINAL_KEY }}
+          TINKOFF_SECRET_KEY: ${{ secrets.TINKOFF_SECRET_KEY }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          NEXT_PUBLIC_GOOGLE_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_CLIENT_ID }}
+          NEXT_PUBLIC_VK_APP_ID: ${{ secrets.NEXT_PUBLIC_VK_APP_ID }}
+          VK_CLIENT_SECRET: ${{ secrets.VK_CLIENT_SECRET }}
         run: pnpm build
 
       # Создаём минимальный Docker образ из уже собранного приложения
