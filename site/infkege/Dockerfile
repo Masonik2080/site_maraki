@@ -8,7 +8,7 @@ RUN apk update && apk upgrade --no-cache && \
     apk add --no-cache libc6-compat
 
 # Enable corepack for pnpm
-RUN corepack enable && corepack prepare pnpm@9 --activate
+RUN corepack enable && corepack prepare pnpm@9.15.9 --activate
 
 # ============================================
 # Stage 2: Dependencies
@@ -16,11 +16,11 @@ RUN corepack enable && corepack prepare pnpm@9 --activate
 FROM base AS deps
 WORKDIR /app
 
-# Copy package files
-COPY package.json pnpm-lock.yaml ./
+# Copy package files and npmrc
+COPY package.json pnpm-lock.yaml .npmrc ./
 
-# Install dependencies with optimizations
-RUN pnpm install --frozen-lockfile --prefer-offline
+# Install dependencies
+RUN pnpm install --frozen-lockfile
 
 # ============================================
 # Stage 3: Builder
@@ -31,6 +31,9 @@ WORKDIR /app
 # Copy dependencies
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+
+# Remove workspace file if exists (not needed for single project)
+RUN rm -f pnpm-workspace.yaml
 
 # Set build-time environment
 ENV NEXT_TELEMETRY_DISABLED=1
